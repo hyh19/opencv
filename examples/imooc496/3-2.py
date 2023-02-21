@@ -1,8 +1,8 @@
 import cv2
 
-cv2.namedWindow('new', cv2.WINDOW_NORMAL)
-cv2.resizeWindow('new', 1920, 1080)
-cv2.imshow('new', 0)
+cv2.namedWindow('win', cv2.WINDOW_NORMAL)
+cv2.resizeWindow('win', 1920, 1080)
+cv2.imshow('win', 0)
 
 key = cv2.waitKey(0)
 if key == 'q':
