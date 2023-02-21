@@ -8,7 +8,7 @@ while True:
     if key & 0xFF == ord('q'):
         break
     elif key & 0xFF == ord('s'):
-        cv2.imwrite("/Users/hyh/Downloads/output.png", img)
+        cv2.imwrite('/Users/hyh/Downloads/output.png', img)
     else:
         print(key)
 cv2.destroyAllWindows()
