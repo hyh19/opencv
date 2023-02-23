@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 
-# 创建一张图片
 img = np.zeros((200, 200), np.uint8)
 
 img[20:120, 20:120] = 255

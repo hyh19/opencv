@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 
-# 创建一张图片
 img = np.zeros((200, 200), np.uint8)
 img2 = np.zeros((200, 200), np.uint8)
 
