@@ -17,11 +17,18 @@ contours, hierarchy = cv2.findContours(binary, cv2.RETR_TREE, cv2.CHAIN_APPROX_S
 # 绘制轮廓
 cv2.drawContours(img, contours, -1, (0, 0, 255), 1)
 
+# 计算面积
+area = cv2.contourArea(contours[0])
+print("area=%d" % area)
+
+# 计算周长
+length = cv2.arcLength(contours[0], False)
+print("len=%d" % length)
+
 cv2.imshow('img', img)
 
 key = cv2.waitKey(0)
 if key & 0xFF == ord('q'):
     cv2.destroyAllWindows()
 
-# findContours: t.ly/9M2x
-# drawContours: t.ly/d0KO
+# contourArea: t.ly/Lo80T
