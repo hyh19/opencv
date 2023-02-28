@@ -11,6 +11,8 @@ sift = cv2.xfeatures2d.SIFT_create()
 
 kp, des = sift.detectAndCompute(gray, None)
 
+print(des)
+
 # 绘制 keypoints
 cv2.drawKeypoints(gray, kp, img)
 
