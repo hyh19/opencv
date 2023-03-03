@@ -1,12 +1,12 @@
 import cv2
 
 
-def callback(userdata):
+def callback(x):
     pass
 
 
 cv2.namedWindow('color', cv2.WINDOW_NORMAL)
-img = cv2.imread('/Users/hyh/Downloads/IMG_8503.JPG')
+img = cv2.imread('RMB.jpeg')
 color_spaces = [cv2.COLOR_BGR2RGBA, cv2.COLOR_BGR2BGRA,
                 cv2.COLOR_BGR2GRAY, cv2.COLOR_BGR2HSV,
                 cv2.COLOR_BGR2YUV]
@@ -23,3 +23,5 @@ while True:
         break
 
 cv2.destroyAllWindows()
+
+# https://bit.ly/3ENkINF
