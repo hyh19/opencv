@@ -8,8 +8,7 @@ cv2.imshow('dog', dog)
 cv2.imshow('new1', new1)
 cv2.imshow('new2', new2)
 
-key = cv2.waitKey(0)
-if key & 0xFF == ord('q'):
-    cv2.destroyAllWindows()
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
 # rotate: https://t.ly/Z74e
