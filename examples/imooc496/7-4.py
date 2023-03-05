@@ -6,7 +6,6 @@ h, w, ch = dog.shape
 print(dog.shape)
 
 M = np.float32([[1, 0, 500], [0, 1, 300]])
-
 # 如果想改变新图像的尺寸，需要修改 dsize
 new = cv2.warpAffine(dog, M, (w, h))
 

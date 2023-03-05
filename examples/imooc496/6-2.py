@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-dog = cv2.imread('./dog.jpeg')
+dog = cv2.imread('dog.jpeg')
 
 # print(dog.shape)
 
