@@ -86,4 +86,4 @@ while True:
 cap.release()
 cv2.destroyAllWindows()
 
-# createBackgroundSubtractorMOG: t.ly/QnNf
+# createBackgroundSubtractorMOG: https://t.ly/QnNf

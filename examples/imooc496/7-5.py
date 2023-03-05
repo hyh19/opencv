@@ -18,4 +18,4 @@ key = cv2.waitKey(0)
 if key & 0xFF == ord('q'):
     cv2.destroyAllWindows()
 
-# getRotationMatrix2D: t.ly/1g6M
+# getRotationMatrix2D: https://t.ly/1g6M

@@ -12,4 +12,4 @@ key = cv2.waitKey(0)
 if key & 0xFF == ord('q'):
     cv2.destroyAllWindows()
 
-# Laplacian: t.ly/0dTE
+# Laplacian: https://t.ly/0dTE

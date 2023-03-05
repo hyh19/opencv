@@ -13,4 +13,4 @@ key = cv2.waitKey(0)
 if key & 0xFF == ord('q'):
     cv2.destroyAllWindows()
 
-# erode: t.ly/3GTc
+# erode: https://t.ly/3GTc

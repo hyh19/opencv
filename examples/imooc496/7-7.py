@@ -16,5 +16,5 @@ key = cv2.waitKey(0)
 if key & 0xFF == ord('q'):
     cv2.destroyAllWindows()
 
-# getPerspectiveTransform: t.ly/LOKc
-# warpPerspective: t.ly/uj5Y
+# getPerspectiveTransform: https://t.ly/LOKc
+# warpPerspective: https://t.ly/uj5Y

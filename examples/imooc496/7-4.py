@@ -18,4 +18,4 @@ key = cv2.waitKey(0)
 if key & 0xFF == ord('q'):
     cv2.destroyAllWindows()
 
-# warpAffine: t.ly/7J_l
+# warpAffine: https://t.ly/7J_l

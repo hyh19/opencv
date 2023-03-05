@@ -24,4 +24,4 @@ key = cv2.waitKey(0)
 if key & 0xFF == ord('q'):
     cv2.destroyAllWindows()
 
-# goodFeaturesToTrack: t.ly/w72-
+# goodFeaturesToTrack: https://t.ly/w72-

@@ -14,4 +14,4 @@ key = cv2.waitKey(0)
 if key & 0xFF == ord('q'):
     cv2.destroyAllWindows()
 
-# threshold: t.ly/BVBu
+# threshold: https://t.ly/BVBu

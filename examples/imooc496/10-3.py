@@ -23,5 +23,5 @@ key = cv2.waitKey(0)
 if key & 0xFF == ord('q'):
     cv2.destroyAllWindows()
 
-# findContours: t.ly/9M2x
-# drawContours: t.ly/d0KO
+# findContours: https://t.ly/9M2x
+# drawContours: https://t.ly/d0KO

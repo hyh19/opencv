@@ -20,4 +20,4 @@ key = cv2.waitKey(0)
 if key & 0xFF == ord('q'):
     cv2.destroyAllWindows()
 
-# getAffineTransform: t.ly/deh5
+# getAffineTransform: https://t.ly/deh5

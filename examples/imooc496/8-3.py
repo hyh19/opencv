@@ -13,4 +13,4 @@ key = cv2.waitKey(0)
 if key & 0xFF == ord('q'):
     cv2.destroyAllWindows()
 
-# filter2D: t.ly/COoA
+# filter2D: https://t.ly/COoA

@@ -14,4 +14,4 @@ key = cv2.waitKey(0)
 if key & 0xFF == ord('q'):
     cv2.destroyAllWindows()
 
-# dilate: t.ly/Mkxq
+# dilate: https://t.ly/Mkxq

@@ -15,4 +15,4 @@ key = cv2.waitKey(0)
 if key & 0xFF == ord('q'):
     cv2.destroyAllWindows()
 
-# adaptiveThreshold: t.ly/j29S
+# adaptiveThreshold: https://t.ly/j29S

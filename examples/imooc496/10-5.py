@@ -42,5 +42,5 @@ key = cv2.waitKey(0)
 if key & 0xFF == ord('q'):
     cv2.destroyAllWindows()
 
-# approxPolyDP: t.ly/Wsku
-# convexHull: t.ly/6tCB
+# approxPolyDP: https://t.ly/Wsku
+# convexHull: https://t.ly/6tCB

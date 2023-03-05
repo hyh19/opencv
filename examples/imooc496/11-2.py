@@ -22,4 +22,4 @@ key = cv2.waitKey(0)
 if key & 0xFF == ord('q'):
     cv2.destroyAllWindows()
 
-# cornerHarris: t.ly/g1TL
+# cornerHarris: https://t.ly/g1TL
