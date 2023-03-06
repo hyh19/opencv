@@ -2,5 +2,4 @@
 import cv2
 
 lena = cv2.imread("lena.bmp")
-cv2.imshow("lesson", lena)
-cv2.waitKey()
+r = cv2.imwrite("result.bmp", lena)
