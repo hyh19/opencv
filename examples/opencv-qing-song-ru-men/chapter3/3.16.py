@@ -2,7 +2,7 @@
 import cv2
 import numpy as np
 
-# 窗口截图 https://bit.ly/3IRLc21
+# 运行结果 https://bit.ly/3IRLc21
 
 # 读取原始载体图像
 lena = cv2.imread("lena.bmp", cv2.IMREAD_GRAYSCALE)
