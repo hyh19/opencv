@@ -2,6 +2,8 @@
 import cv2
 import numpy as np
 
+# 运行结果 https://bit.ly/40iYegB
+
 o = cv2.imread('loc3.jpg')
 cv2.imshow("original", o)
 gray = cv2.cvtColor(o, cv2.COLOR_BGR2GRAY)
