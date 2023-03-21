@@ -1,8 +1,6 @@
 import cv2
 
 img = cv2.imread('chess.png')
-
-# 拉普拉斯
 dst = cv2.Laplacian(img, cv2.CV_64F, ksize=5)
 
 cv2.imshow('img', img)
