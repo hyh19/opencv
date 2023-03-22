@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import cv2 as cv
 
 img = cv.imread("lena.bmp", cv.IMREAD_GRAYSCALE)
@@ -11,3 +10,4 @@ cv.imshow("after", img)
 
 cv.waitKey()
 cv.destroyAllWindows()
+

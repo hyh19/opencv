@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-import numpy as np
 import cv2 as cv
+import numpy as np
 
 # -----------蓝色通道值--------------
 blue = np.zeros((300, 300, 3), dtype=np.uint8)
@@ -19,6 +19,7 @@ red = np.zeros((300, 300, 3), dtype=np.uint8)
 red[:, :, 2] = 255
 print("red=\n", red)
 cv.imshow("red", red)
+
 # -----------释放窗口--------------
 cv.waitKey()
 cv.destroyAllWindows()
