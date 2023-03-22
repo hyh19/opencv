@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
-img = cv2.imread("tiffany.bmp", 0)
-t1, thd = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
-t2, otsu = cv2.threshold(img, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
-cv2.imshow("img", img)
-cv2.imshow("thd", thd)
-cv2.imshow("otus", otsu)
-cv2.waitKey()
-cv2.destroyAllWindows()
+img = cv.imread("tiffany.bmp", 0)
+t1, thd = cv.threshold(img, 127, 255, cv.THRESH_BINARY)
+t2, otsu = cv.threshold(img, 0, 255, cv.THRESH_BINARY + cv.THRESH_OTSU)
+cv.imshow("img", img)
+cv.imshow("thd", thd)
+cv.imshow("otus", otsu)
+cv.waitKey()
+cv.destroyAllWindows()

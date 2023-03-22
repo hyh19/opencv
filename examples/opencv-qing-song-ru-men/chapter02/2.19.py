@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
-gray = cv2.imread("lena.bmp", 0)
-color = cv2.imread("lenacolor.png")
+gray = cv.imread("lena.bmp", 0)
+color = cv.imread("lenacolor.png")
 print("图像gray属性：")
 print("gray.shape=", gray.shape)
 print("gray.size=", gray.size)

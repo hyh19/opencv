@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 import numpy as np
 
-o = cv2.imread("erode.bmp", cv2.IMREAD_UNCHANGED)
+o = cv.imread("erode.bmp", cv.IMREAD_UNCHANGED)
 kernel = np.ones((9, 9), np.uint8)
-erosion = cv2.erode(o, kernel, iterations=5)
-cv2.imshow("original", o)
-cv2.imshow("erosion", erosion)
-cv2.waitKey()
-cv2.destroyAllWindows()
+erosion = cv.erode(o, kernel, iterations=5)
+cv.imshow("original", o)
+cv.imshow("erosion", erosion)
+cv.waitKey()
+cv.destroyAllWindows()

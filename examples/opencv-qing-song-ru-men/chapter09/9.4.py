@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
-o = cv2.imread('sobel4.bmp', cv2.IMREAD_GRAYSCALE)
-sobely = cv2.Sobel(o, cv2.CV_64F, 0, 1)
-sobely = cv2.convertScaleAbs(sobely)
-cv2.imshow("original", o)
-cv2.imshow("y", sobely)
-cv2.waitKey()
-cv2.destroyAllWindows()
+o = cv.imread('sobel4.bmp', cv.IMREAD_GRAYSCALE)
+sobely = cv.Sobel(o, cv.CV_64F, 0, 1)
+sobely = cv.convertScaleAbs(sobely)
+cv.imshow("original", o)
+cv.imshow("y", sobely)
+cv.waitKey()
+cv.destroyAllWindows()

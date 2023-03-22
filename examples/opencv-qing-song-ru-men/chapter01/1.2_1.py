@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
-lena = cv2.imread("lena.bmp")
-cv2.imshow("lesson", lena)
-cv2.waitKey()
+lena = cv.imread("lena.bmp")
+cv.imshow("lesson", lena)
+cv.waitKey()

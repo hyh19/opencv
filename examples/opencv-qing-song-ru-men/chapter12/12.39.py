@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 import numpy as np
 
-o = cv2.imread('cs.bmp')
+o = cv.imread('cs.bmp')
 
 # --------获取并绘制轮廓-----------------
-gray = cv2.cvtColor(o, cv2.COLOR_BGR2GRAY)
-ret, binary = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY)
-image, contours, hierarchy = cv2.findContours(binary, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+gray = cv.cvtColor(o, cv.COLOR_BGR2GRAY)
+ret, binary = cv.threshold(gray, 127, 255, cv.THRESH_BINARY)
+image, contours, hierarchy = cv.findContours(binary, cv.RETR_LIST, cv.CHAIN_APPROX_SIMPLE)
 mask = np.zeros(gray.shape, np.uint8)
 cnt = contours[0]
-cv2.drawContours(mask, [cnt], 0, 255, -1)
+cv.drawContours(mask, [cnt], 0, 255, -1)
 
 # --------计算极值-----------------
 leftmost = tuple(cnt[cnt[:, :, 0].argmin()][0])
@@ -25,19 +25,19 @@ print("topmost=", topmost)
 print("bottommost=", bottommost)
 
 # --------绘制说明文字-----------------
-font = cv2.FONT_HERSHEY_SIMPLEX
-cv2.putText(o, 'A', leftmost, font, 1, (0, 0, 255), 2)
-cv2.circle(o, leftmost, 3, [255, 0, 0], -1)
-cv2.putText(o, 'B', rightmost, font, 1, (0, 0, 255), 2)
-cv2.circle(o, rightmost, 3, [255, 0, 0], -1)
-cv2.putText(o, 'C', topmost, font, 1, (0, 0, 255), 2)
-cv2.circle(o, topmost, 3, [255, 0, 0], -1)
-cv2.putText(o, 'D', bottommost, font, 1, (0, 0, 255), 2)
-cv2.circle(o, bottommost, 3, [255, 0, 0], -1)
+font = cv.FONT_HERSHEY_SIMPLEX
+cv.putText(o, 'A', leftmost, font, 1, (0, 0, 255), 2)
+cv.circle(o, leftmost, 3, [255, 0, 0], -1)
+cv.putText(o, 'B', rightmost, font, 1, (0, 0, 255), 2)
+cv.circle(o, rightmost, 3, [255, 0, 0], -1)
+cv.putText(o, 'C', topmost, font, 1, (0, 0, 255), 2)
+cv.circle(o, topmost, 3, [255, 0, 0], -1)
+cv.putText(o, 'D', bottommost, font, 1, (0, 0, 255), 2)
+cv.circle(o, bottommost, 3, [255, 0, 0], -1)
 
 # --------绘制图像-----------------
-cv2.imshow("result", o)
+cv.imshow("result", o)
 
 # --------释放窗口-----------------
-cv2.waitKey()
-cv2.destroyAllWindows()
+cv.waitKey()
+cv.destroyAllWindows()

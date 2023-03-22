@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 import numpy as np
 
 img = np.random.randint(0, 256, size=[4, 6], dtype=np.uint8)
@@ -10,7 +10,7 @@ for r in range(rows):
     for c in range(cols):
         map_row.itemset((r, c), c)
         map_col.itemset((r, c), r)
-rst = cv2.remap(img, map_col, map_row, cv2.INTER_LINEAR)
+rst = cv.remap(img, map_col, map_row, cv.INTER_LINEAR)
 print("img=\n", img)
 print("map_row=\n", map_row)
 print("map_col=\n", map_col)

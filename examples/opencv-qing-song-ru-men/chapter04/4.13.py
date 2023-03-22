@@ -1,21 +1,21 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
 # 运行结果 https://bit.ly/3ZwRATe
 
-img = cv2.imread("lenacolor.png")
-bgra = cv2.cvtColor(img, cv2.COLOR_BGR2BGRA)
-b, g, r, a = cv2.split(bgra)
+img = cv.imread("lenacolor.png")
+bgra = cv.cvtColor(img, cv.COLOR_BGR2BGRA)
+b, g, r, a = cv.split(bgra)
 a[:, :] = 125
-bgra125 = cv2.merge([b, g, r, a])
+bgra125 = cv.merge([b, g, r, a])
 a[:, :] = 0
-bgra0 = cv2.merge([b, g, r, a])
-cv2.imshow("img", img)
-cv2.imshow("bgra", bgra)
-cv2.imshow("bgra125", bgra125)
-cv2.imshow("bgra0", bgra0)
-cv2.waitKey()
-cv2.destroyAllWindows()
-# cv2.imwrite("bgra.png", bgra)
-# cv2.imwrite("bgra125.png", bgra125)
-# cv2.imwrite("bgra0.png", bgra0)
+bgra0 = cv.merge([b, g, r, a])
+cv.imshow("img", img)
+cv.imshow("bgra", bgra)
+cv.imshow("bgra125", bgra125)
+cv.imshow("bgra0", bgra0)
+cv.waitKey()
+cv.destroyAllWindows()
+# cv.imwrite("bgra.png", bgra)
+# cv.imwrite("bgra125.png", bgra125)
+# cv.imwrite("bgra0.png", bgra0)

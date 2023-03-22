@@ -1,24 +1,24 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
 # --------------读取并绘制原始图像------------------
-o = cv2.imread('hand.bmp')
-cv2.imshow("original", o)
+o = cv.imread('hand.bmp')
+cv.imshow("original", o)
 
 # --------------提取轮廓------------------
-gray = cv2.cvtColor(o, cv2.COLOR_BGR2GRAY)
-ret, binary = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY)
-image, contours, hierarchy = cv2.findContours(binary,
-                                              cv2.RETR_LIST,
-                                              cv2.CHAIN_APPROX_SIMPLE)
+gray = cv.cvtColor(o, cv.COLOR_BGR2GRAY)
+ret, binary = cv.threshold(gray, 127, 255, cv.THRESH_BINARY)
+image, contours, hierarchy = cv.findContours(binary,
+                                              cv.RETR_LIST,
+                                              cv.CHAIN_APPROX_SIMPLE)
 
 # --------------寻找凸包，得到凸包的角点------------------
-hull = cv2.convexHull(contours[0])
+hull = cv.convexHull(contours[0])
 
 # --------------绘制凸包------------------
-cv2.polylines(o, [hull], True, (0, 255, 0), 2)
+cv.polylines(o, [hull], True, (0, 255, 0), 2)
 
 # --------------显示凸包------------------
-cv2.imshow("result", o)
-cv2.waitKey()
-cv2.destroyAllWindows()
+cv.imshow("result", o)
+cv.waitKey()
+cv.destroyAllWindows()

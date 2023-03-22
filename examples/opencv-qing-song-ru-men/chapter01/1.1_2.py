@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
-lena = cv2.imread("lenacolor.png")
+lena = cv.imread("lenacolor.png")
 print(lena)

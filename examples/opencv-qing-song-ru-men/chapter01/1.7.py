@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
-lena = cv2.imread("lena.bmp")
-r = cv2.imwrite("result.bmp", lena)
+lena = cv.imread("lena.bmp")
+r = cv.imwrite("result.bmp", lena)

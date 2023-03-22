@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
-o = cv2.imread('scharr.bmp', cv2.IMREAD_GRAYSCALE)
-scharry = cv2.Scharr(o, cv2.CV_64F, 0, 1)
-scharry = cv2.convertScaleAbs(scharry)
-cv2.imshow("original", o)
-cv2.imshow("y", scharry)
-cv2.waitKey()
-cv2.destroyAllWindows()
+o = cv.imread('scharr.bmp', cv.IMREAD_GRAYSCALE)
+scharry = cv.Scharr(o, cv.CV_64F, 0, 1)
+scharry = cv.convertScaleAbs(scharry)
+cv.imshow("original", o)
+cv.imshow("y", scharry)
+cv.waitKey()
+cv.destroyAllWindows()

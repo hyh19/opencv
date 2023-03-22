@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 import numpy as np
 
-o = cv2.imread("dilation.bmp", cv2.IMREAD_UNCHANGED)
+o = cv.imread("dilation.bmp", cv.IMREAD_UNCHANGED)
 kernel = np.ones((5, 5), np.uint8)
-dilation = cv2.dilate(o, kernel, iterations=9)
-cv2.imshow("original", o)
-cv2.imshow("dilation", dilation)
-cv2.waitKey()
-cv2.destroyAllWindows()
+dilation = cv.dilate(o, kernel, iterations=9)
+cv.imshow("original", o)
+cv.imshow("dilation", dilation)
+cv.waitKey()
+cv.destroyAllWindows()

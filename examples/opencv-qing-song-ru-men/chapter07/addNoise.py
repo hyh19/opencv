@@ -4,7 +4,7 @@ Created on Wed Jun 29 08:16:09 2018
 
 @author: 天津拨云咨询服务有限公司  lilizong@gmail.com
 """
-import cv2
+import cv2 as cv
 import numpy as np
 def saltpepper(img,n):
     m=int((img.shape[0]*img.shape[1])*n)
@@ -30,11 +30,11 @@ def saltpepper(img,n):
 
 
 #上面就是椒盐噪声函数，下面是使用方法，大家可以愉快的玩耍了
-img=cv2.imread('image\\lena.bmp')
+img=cv.imread('image\\lena.bmp')
 saltImage=saltpepper(img,0.02)
-cv2.imshow('saltImage',saltImage)
+cv.imshow('saltImage',saltImage)
 
-cv2.imwrite('image\\test.jpg',img)
+cv.imwrite('image\\test.jpg',img)
 
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+cv.waitKey(0)
+cv.destroyAllWindows()

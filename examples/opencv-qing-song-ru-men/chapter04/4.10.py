@@ -1,20 +1,20 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
 # 运行结果 https://bit.ly/3kUm2aW
 
-img = cv2.imread("lesson2.jpg")
-hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
-h, s, v = cv2.split(hsv)
+img = cv.imread("lesson2.jpg")
+hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)
+h, s, v = cv.split(hsv)
 minHue = 5
 maxHue = 170
-hueMask = cv2.inRange(h, minHue, maxHue)
+hueMask = cv.inRange(h, minHue, maxHue)
 minSat = 25
 maxSat = 166
-satMask = cv2.inRange(s, minSat, maxSat)
+satMask = cv.inRange(s, minSat, maxSat)
 mask = hueMask & satMask
-roi = cv2.bitwise_and(img, img, mask=mask)
-cv2.imshow("img", img)
-cv2.imshow("ROI", roi)
-cv2.waitKey()
-cv2.destroyAllWindows()
+roi = cv.bitwise_and(img, img, mask=mask)
+cv.imshow("img", img)
+cv.imshow("ROI", roi)
+cv.waitKey()
+cv.destroyAllWindows()

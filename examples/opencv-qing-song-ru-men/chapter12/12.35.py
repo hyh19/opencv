@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 import numpy as np
 
 # ------------生成一个都是0值的a-------------------
@@ -18,7 +18,7 @@ for times in range(10):
 print("a=\n", a)
 
 # ------查找a内非零值的位置信息------------
-loc = cv2.findNonZero(a)
+loc = cv.findNonZero(a)
 
 # -----将a内非零值的位置信息输出------------
 print("a内非零值位置:\n", loc)

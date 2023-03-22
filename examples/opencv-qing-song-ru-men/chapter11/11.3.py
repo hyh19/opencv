@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
-o = cv2.imread("lena.bmp")
-down = cv2.pyrDown(o)
-up = cv2.pyrUp(down)
+o = cv.imread("lena.bmp")
+down = cv.pyrDown(o)
+up = cv.pyrUp(down)
 diff = up - o  # 构造diff图像，查看up与o的区别
 print("o.shape=", o.shape)
 print("up.shape=", up.shape)
-cv2.imshow("original", o)
-cv2.imshow("up", up)
-cv2.imshow("difference", diff)
-cv2.waitKey()
-cv2.destroyAllWindows()
+cv.imshow("original", o)
+cv.imshow("up", up)
+cv.imshow("difference", diff)
+cv.waitKey()
+cv.destroyAllWindows()

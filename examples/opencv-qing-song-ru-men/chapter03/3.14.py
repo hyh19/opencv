@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 import numpy as np
 
-lena = cv2.imread("lena.bmp", cv2.IMREAD_GRAYSCALE)
+lena = cv.imread("lena.bmp", cv.IMREAD_GRAYSCALE)
 r, c = lena.shape
 key = np.random.randint(0, 256, size=[r, c], dtype=np.uint8)
-encryption = cv2.bitwise_xor(lena, key)
-decryption = cv2.bitwise_xor(encryption, key)
-cv2.imshow("lena", lena)
-cv2.imshow("key", key)
-cv2.imshow("encryption", encryption)
-cv2.imshow("decryption", decryption)
-cv2.waitKey()
-cv2.destroyAllWindows()
+encryption = cv.bitwise_xor(lena, key)
+decryption = cv.bitwise_xor(encryption, key)
+cv.imshow("lena", lena)
+cv.imshow("key", key)
+cv.imshow("encryption", encryption)
+cv.imshow("decryption", decryption)
+cv.waitKey()
+cv.destroyAllWindows()

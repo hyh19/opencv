@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
-lena = cv2.imread("lena.bmp")
-cv2.imshow("demo", lena)
-key = cv2.waitKey()
+lena = cv.imread("lena.bmp")
+cv.imshow("demo", lena)
+key = cv.waitKey()
 if key == ord('a'):
-    cv2.imshow("PressA", lena)
+    cv.imshow("PressA", lena)
 elif key == ord('b'):
-    cv2.imshow("PressB", lena)
+    cv.imshow("PressB", lena)

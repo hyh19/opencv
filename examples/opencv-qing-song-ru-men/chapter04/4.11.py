@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
 # 运行结果 https://bit.ly/41YrMRU
 
-img = cv2.imread("barbara.bmp")
-hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
-h, s, v = cv2.split(hsv)
+img = cv.imread("barbara.bmp")
+hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)
+h, s, v = cv.split(hsv)
 v[:, :] = 255
-newHSV = cv2.merge([h, s, v])
-art = cv2.cvtColor(newHSV, cv2.COLOR_HSV2BGR)
-cv2.imshow("img", img)
-cv2.imshow("art", art)
-cv2.waitKey()
-cv2.destroyAllWindows()
+newHSV = cv.merge([h, s, v])
+art = cv.cvtColor(newHSV, cv.COLOR_HSV2BGR)
+cv.imshow("img", img)
+cv.imshow("art", art)
+cv.waitKey()
+cv.destroyAllWindows()

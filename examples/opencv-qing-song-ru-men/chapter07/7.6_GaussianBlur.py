@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
-o = cv2.imread("image/lenaNoise.png")
-r = cv2.GaussianBlur(o, (5, 5), 0, 0)
-cv2.imshow("original", o)
-cv2.imshow("result", r)
-cv2.waitKey()
-cv2.destroyAllWindows()
+o = cv.imread("image/lenaNoise.png")
+r = cv.GaussianBlur(o, (5, 5), 0, 0)
+cv.imshow("original", o)
+cv.imshow("result", r)
+cv.waitKey()
+cv.destroyAllWindows()

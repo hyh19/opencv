@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
-img = cv2.imread("lena.bmp", 0)
-cv2.imshow("before", img)
+img = cv.imread("lena.bmp", 0)
+cv.imshow("before", img)
 for i in range(10, 100):
     for j in range(80, 100):
         img[i, j] = 255
-cv2.imshow("after", img)
-cv2.waitKey()
-cv2.destroyAllWindows()
+cv.imshow("after", img)
+cv.waitKey()
+cv.destroyAllWindows()

@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
-o = cv2.imread('Laplacian.bmp', cv2.IMREAD_GRAYSCALE)
-Laplacian = cv2.Laplacian(o, cv2.CV_64F)
-Laplacian = cv2.convertScaleAbs(Laplacian)
-cv2.imshow("original", o)
-cv2.imshow("Laplacian", Laplacian)
-cv2.waitKey()
-cv2.destroyAllWindows()
+o = cv.imread('Laplacian.bmp', cv.IMREAD_GRAYSCALE)
+Laplacian = cv.Laplacian(o, cv.CV_64F)
+Laplacian = cv.convertScaleAbs(Laplacian)
+cv.imshow("original", o)
+cv.imshow("Laplacian", Laplacian)
+cv.waitKey()
+cv.destroyAllWindows()

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
-a = cv2.imread("lenacolor.png", cv2.IMREAD_UNCHANGED)
+a = cv.imread("lenacolor.png", cv.IMREAD_UNCHANGED)
 face = a[220:400, 250:350]
-cv2.imshow("original", a)
-cv2.imshow("face", face)
-cv2.waitKey()
-cv2.destroyAllWindows()
+cv.imshow("original", a)
+cv.imshow("face", face)
+cv.waitKey()
+cv.destroyAllWindows()

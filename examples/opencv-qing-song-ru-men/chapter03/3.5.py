@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
-a = cv2.imread("boat.bmp")
-b = cv2.imread("lena.bmp")
-result = cv2.addWeighted(a, 0.6, b, 0.4, 0)
-cv2.imshow("boat", a)
-cv2.imshow("lena", b)
-cv2.imshow("result", result)
-cv2.waitKey()
-cv2.destroyAllWindows()
+a = cv.imread("boat.bmp")
+b = cv.imread("lena.bmp")
+result = cv.addWeighted(a, 0.6, b, 0.4, 0)
+cv.imshow("boat", a)
+cv.imshow("lena", b)
+cv.imshow("result", result)
+cv.waitKey()
+cv.destroyAllWindows()

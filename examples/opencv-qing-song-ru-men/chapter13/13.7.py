@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 import matplotlib.pyplot as plt
 
-o = cv2.imread("image/boatGray.bmp")
-cv2.imshow("original", o)
+o = cv.imread("image/boatGray.bmp")
+cv.imshow("original", o)
 
-hist = cv2.calcHist([o], [0], None, [256], [0, 255])
+hist = cv.calcHist([o], [0], None, [256], [0, 255])
 plt.plot(hist, color='b')
 plt.show()
 
-cv2.waitKey()
-cv2.destroyAllWindows()
+cv.waitKey()
+cv.destroyAllWindows()

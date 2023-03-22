@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
-img = cv2.imread("lenacolor.png")
-cv2.imshow("before", img)
+img = cv.imread("lenacolor.png")
+cv.imshow("before", img)
 print("访问img[0,0]=", img[0, 0])
 print("访问img[0,0,0]=", img[0, 0, 0])
 print("访问img[0,0,1]=", img[0, 0, 1])
@@ -26,7 +26,7 @@ for i in range(100, 150):
     for j in range(0, 100):
         img[i, j] = 0  # 黑色
 
-cv2.imshow("after", img)
+cv.imshow("after", img)
 
 print("修改后img[0,0]=", img[0, 0])
 print("修改后img[0,0,0]=", img[0, 0, 0])
@@ -35,5 +35,5 @@ print("修改后img[0,0,2]=", img[0, 0, 2])
 print("修改后img[50,0]=", img[50, 0])
 print("修改后img[100,0]=", img[100, 0])
 
-cv2.waitKey()
-cv2.destroyAllWindows()
+cv.waitKey()
+cv.destroyAllWindows()

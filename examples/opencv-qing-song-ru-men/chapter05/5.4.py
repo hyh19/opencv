@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
 # 运行结果 https://bit.ly/3J0btLr
 
-img = cv2.imread("lena.bmp")
-x = cv2.flip(img, 0)
-y = cv2.flip(img, 1)
-xy = cv2.flip(img, -1)
-cv2.imshow("img", img)
-cv2.imshow("x", x)
-cv2.imshow("y", y)
-cv2.imshow("xy", xy)
-cv2.waitKey()
-cv2.destroyAllWindows()
+img = cv.imread("lena.bmp")
+x = cv.flip(img, 0)
+y = cv.flip(img, 1)
+xy = cv.flip(img, -1)
+cv.imshow("img", img)
+cv.imshow("x", x)
+cv.imshow("y", y)
+cv.imshow("xy", xy)
+cv.waitKey()
+cv.destroyAllWindows()
