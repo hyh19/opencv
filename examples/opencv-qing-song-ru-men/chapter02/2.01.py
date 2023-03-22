@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import cv2 as cv as cv
+import cv2 as cv
 import numpy as np
 
 img = np.zeros((8, 8), dtype=np.uint8)
