@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
 
-img = cv.imread("lena.bmp", 0)
+img = cv.imread("lena.bmp", cv.IMREAD_GRAYSCALE)
 cv.imshow("before", img)
 
 for row in range(10, 100):
