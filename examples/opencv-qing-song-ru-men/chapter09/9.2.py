@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
 
-o = cv.imread('sobel4.bmp', cv.IMREAD_GRAYSCALE)
-sobelx = cv.Sobel(o, -1, 1, 0)
-cv.imshow("original", o)
-cv.imshow("x", sobelx)
+img_gray = cv.imread('sobel4.bmp', cv.IMREAD_GRAYSCALE)
+sobel_x = cv.Sobel(img_gray, -1, 1, 0)
+cv.imshow("gray", img_gray)
+cv.imshow("sobel_x", sobel_x)
 cv.waitKey()
 cv.destroyAllWindows()
