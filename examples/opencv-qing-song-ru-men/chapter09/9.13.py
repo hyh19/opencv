@@ -14,8 +14,8 @@ scharrx = cv.convertScaleAbs(scharrx)  # 转回uint8
 scharry = cv.convertScaleAbs(scharry)
 scharrxy = cv.addWeighted(scharrx, 0.5, scharry, 0.5, 0)
 
-cv.imshow("original", o)
-cv.imshow("sobelxy", sobelxy)
-cv.imshow("scharrxy", scharrxy)
+cv.imshow('original', o)
+cv.imshow('sobelxy', sobelxy)
+cv.imshow('scharrxy', scharrxy)
 cv.waitKey()
 cv.destroyAllWindows()
