@@ -1,18 +1,24 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
 
-o = cv.imread('lena.bmp', cv.IMREAD_GRAYSCALE)
-sobelx = cv.Sobel(o, cv.CV_64F, 1, 0)
-sobely = cv.Sobel(o, cv.CV_64F, 0, 1)
-sobelx = cv.convertScaleAbs(sobelx)  # 转回uint8
-sobely = cv.convertScaleAbs(sobely)
-sobelxy = cv.addWeighted(sobelx, 0.5, sobely, 0.5, 0)
+img_gray = cv.imread('sobel4.bmp', cv.IMREAD_GRAYSCALE)
 
-sobelxy11 = cv.Sobel(o, cv.CV_64F, 1, 1)
-sobelxy11 = cv.convertScaleAbs(sobelxy11)
+sobel_x = cv.Sobel(img_gray, cv.CV_64F, 1, 0)
+sobel_x = cv.convertScaleAbs(sobel_x)
 
-cv.imshow('original', o)
-cv.imshow('xy', sobelxy)
-cv.imshow('xy11', sobelxy11)
+sobel_y = cv.Sobel(img_gray, cv.CV_64F, 0, 1)
+sobel_y = cv.convertScaleAbs(sobel_y)
+
+sobel_xy_add = cv.addWeighted(sobel_x, 0.5, sobel_y, 0.5, 0)
+
+sobel_xy_11 = cv.Sobel(img_gray, cv.CV_64F, 1, 1)
+sobel_xy_11 = cv.convertScaleAbs(sobel_xy_11)
+
+cv.imshow('img_gray', img_gray)
+cv.imshow('sobel_x', sobel_x)
+cv.imshow('sobel_y', sobel_y)
+cv.imshow('sobel_xy_add', sobel_xy_add)
+cv.imshow('sobel_xy_11', sobel_xy_11)
+
 cv.waitKey()
 cv.destroyAllWindows()
