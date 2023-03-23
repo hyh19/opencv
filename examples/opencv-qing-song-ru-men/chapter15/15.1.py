@@ -4,15 +4,15 @@ from matplotlib import pyplot as plt
 
 img = cv2.imread('lena512g.bmp', cv2.IMREAD_GRAYSCALE)
 template = cv2.imread('temp.bmp', cv2.IMREAD_GRAYSCALE)
-th, tw = template.shape[::]
+th, tw = template.shape[:]
 
-result = cv2.matchTemplate(img, template, cv2.TM_SQDIFF)
-minVal, maxVal, minLoc, maxLoc = cv2.minMaxLoc(result)
+res = cv2.matchTemplate(img, template, cv2.TM_SQDIFF)
+minVal, maxVal, minLoc, maxLoc = cv2.minMaxLoc(res)
 topLeft = minLoc
 bottomRight = (topLeft[0] + tw, topLeft[1] + th)
 cv2.rectangle(img, topLeft, bottomRight, 255, 2)
 
-plt.subplot(121), plt.imshow(result, cmap='gray')
+plt.subplot(121), plt.imshow(res, cmap='gray')
 plt.title('Matching Result'), plt.xticks([]), plt.yticks([])
 
 plt.subplot(122), plt.imshow(img, cmap='gray')
