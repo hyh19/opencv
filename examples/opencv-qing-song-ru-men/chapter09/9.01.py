@@ -7,3 +7,4 @@ a = np.random.randint(-256, 256, size=[4, 5], dtype=np.int16)
 res = cv.convertScaleAbs(a)
 print('a=\n', a)
 print('res=\n', res)
+# 3.23

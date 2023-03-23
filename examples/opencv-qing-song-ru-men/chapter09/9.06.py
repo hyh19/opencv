@@ -18,3 +18,4 @@ cv.imshow('sobel_xy', sobel_xy)
 
 cv.waitKey()
 cv.destroyAllWindows()
+# 3.23
