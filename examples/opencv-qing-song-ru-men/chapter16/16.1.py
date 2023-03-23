@@ -21,8 +21,6 @@ for line in lines:
     y2 = int(y0 - 1000 * a)
     cv.line(res, (x1, y1), (x2, y2), (255, 0, 0), 2)
 
-img_rgb = cv.cvtColor(img, cv.COLOR_BGR2RGB)
-res_rgb = cv.cvtColor(res, cv.COLOR_BGR2RGB)
-plt.subplot(121), plt.imshow(img_rgb), plt.axis('off')
-plt.subplot(122), plt.imshow(res_rgb), plt.axis('off')
+plt.subplot(121), plt.imshow(cv.cvtColor(img, cv.COLOR_BGR2RGB)), plt.axis('off')
+plt.subplot(122), plt.imshow(cv.cvtColor(res, cv.COLOR_BGR2RGB)), plt.axis('off')
 plt.show()
