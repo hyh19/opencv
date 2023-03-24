@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
 
-o = cv.imread('scharr.bmp', cv.IMREAD_GRAYSCALE)
-scharrxy11 = cv.Scharr(o, cv.CV_64F, 1, 1)
-cv.imshow('original', o)
-cv.imshow('xy11', scharrxy11)
+img_gray = cv.imread('scharr.bmp', cv.IMREAD_GRAYSCALE)
+scharr_xy = cv.Scharr(img_gray, cv.CV_64F, 1, 1)
+cv.imshow('img_gray', img_gray)
+cv.imshow('scharr_xy', scharr_xy)
 cv.waitKey()
 cv.destroyAllWindows()

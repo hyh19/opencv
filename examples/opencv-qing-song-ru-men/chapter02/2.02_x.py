@@ -10,4 +10,3 @@ cv.imshow("after", img)
 
 cv.waitKey()
 cv.destroyAllWindows()
-

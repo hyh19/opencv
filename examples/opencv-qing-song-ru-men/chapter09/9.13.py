@@ -1,21 +1,23 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
 
-o = cv.imread('lena.bmp', cv.IMREAD_GRAYSCALE)
-sobelx = cv.Sobel(o, cv.CV_64F, 1, 0, ksize=3)
-sobely = cv.Sobel(o, cv.CV_64F, 0, 1, ksize=3)
-sobelx = cv.convertScaleAbs(sobelx)  # 转回uint8
-sobely = cv.convertScaleAbs(sobely)
-sobelxy = cv.addWeighted(sobelx, 0.5, sobely, 0.5, 0)
+img_gray = cv.imread('lena.bmp', cv.IMREAD_GRAYSCALE)
 
-scharrx = cv.Scharr(o, cv.CV_64F, 1, 0)
-scharry = cv.Scharr(o, cv.CV_64F, 0, 1)
-scharrx = cv.convertScaleAbs(scharrx)  # 转回uint8
-scharry = cv.convertScaleAbs(scharry)
-scharrxy = cv.addWeighted(scharrx, 0.5, scharry, 0.5, 0)
+sobel_x = cv.Sobel(img_gray, cv.CV_64F, 1, 0, ksize=3)
+sobel_x = cv.convertScaleAbs(sobel_x)
+sobel_y = cv.Sobel(img_gray, cv.CV_64F, 0, 1, ksize=3)
+sobel_y = cv.convertScaleAbs(sobel_y)
+sobel_xy = cv.addWeighted(sobel_x, 0.5, sobel_y, 0.5, 0)
 
-cv.imshow('original', o)
-cv.imshow('sobelxy', sobelxy)
-cv.imshow('scharrxy', scharrxy)
+scharr_x = cv.Scharr(img_gray, cv.CV_64F, 1, 0)
+scharr_x = cv.convertScaleAbs(scharr_x)
+scharr_y = cv.Scharr(img_gray, cv.CV_64F, 0, 1)
+scharr_y = cv.convertScaleAbs(scharr_y)
+scharr_xy = cv.addWeighted(scharr_x, 0.5, scharr_y, 0.5, 0)
+
+cv.imshow('img_gray', img_gray)
+cv.imshow('sobel_xy', sobel_xy)
+cv.imshow('scharr_xy', scharr_xy)
+
 cv.waitKey()
 cv.destroyAllWindows()

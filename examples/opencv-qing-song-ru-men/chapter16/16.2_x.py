@@ -3,8 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 img = cv.imread('computer.jpg')
-gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
-edges = cv.Canny(gray, 50, 150, apertureSize=3)
+img_gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+edges = cv.Canny(img_gray, 50, 150, apertureSize=3)
 lines = cv.HoughLinesP(edges, 1, np.pi / 180, 160, minLineLength=100, maxLineGap=10)
 
 res = img.copy()
