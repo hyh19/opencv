@@ -2,9 +2,9 @@
 import cv2 as cv
 
 img = cv.imread('Laplacian.bmp', cv.IMREAD_GRAYSCALE)
-laplacian = cv.Laplacian(img, cv.CV_64F)
-laplacian = cv.convertScaleAbs(laplacian)
+lap = cv.Laplacian(img, cv.CV_64F)
+lap = cv.convertScaleAbs(lap)
 cv.imshow('img', img)
-cv.imshow('laplacian', laplacian)
+cv.imshow('lap', lap)
 cv.waitKey()
 cv.destroyAllWindows()
