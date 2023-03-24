@@ -4,8 +4,8 @@ import numpy as np
 
 img = cv.imread('erode.bmp', cv.IMREAD_UNCHANGED)
 kernel = np.ones((5, 5), np.uint8)
-erosion = cv.erode(img, kernel)
+erode = cv.erode(img, kernel)
 cv.imshow('img', img)
-cv.imshow('erosion', erosion)
+cv.imshow('erode', erode)
 cv.waitKey()
 cv.destroyAllWindows()
