@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
 
+# 运行结果 https://is.gd/uP3izu
+
 gray = cv.imread("lena.bmp", cv.IMREAD_GRAYSCALE)
 cv.imshow('gray', gray)
 print("图像gray属性：")
