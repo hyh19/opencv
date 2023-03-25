@@ -2,6 +2,8 @@
 import cv2 as cv
 import numpy as np
 
+# 运行结果 https://bit.ly/40l4rsb
+
 img1 = cv.imread('closing.bmp')
 img2 = cv.imread('closing2.bmp')
 
