@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
-import numpy as np
 import cv2 as cv
+import numpy as np
+
+# 运行结果 https://bit.ly/3JMl6hm
 
 img = np.zeros((300, 300, 3), dtype=np.uint8)
 img[:, 0:100, 0] = 255
