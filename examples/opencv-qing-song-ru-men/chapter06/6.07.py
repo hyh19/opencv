@@ -4,11 +4,11 @@ import numpy as np
 
 img = np.random.randint(0, 256, size=[4, 5], dtype=np.uint8)
 thresh, res = cv.threshold(img, 127, 255, cv.THRESH_TOZERO_INV)
-print("img=\n", img)
-print("thresh=", thresh)
-print("res=\n", res)
+print('img=\n', img)
+print('thresh=', thresh)
+print('res=\n', res)
 
-"""
+'''
 img=
  [[  1 200  96 143  26]
  [131  60  43  88 102]
@@ -20,4 +20,4 @@ res=
  [  0  60  43  88 102]
  [ 48   0  51  80   0]
  [ 80 116   0   0   0]]
-"""
+'''
