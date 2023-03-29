@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/imooc496.iml" filepath="$PROJECT_DIR$/.idea/imooc496.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/opencv-imooc496.iml" filepath="$PROJECT_DIR$/.idea/opencv-imooc496.iml" />
     </modules>
   </component>
 </project>
