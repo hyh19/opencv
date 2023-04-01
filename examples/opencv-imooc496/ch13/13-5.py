@@ -1,4 +1,4 @@
-import cv2
+import cv2 as cv
 from cv2 import dnn
 import numpy as np
 
@@ -13,7 +13,7 @@ with open(class_path, 'rt') as f:
     class_names = [line[line.find(" ") + 1:].strip() for line in f]
 
 # 图像预处理和前向传递
-image = cv2.imread('smallcat.jpeg')
+image = cv.imread('smallcat.jpeg')
 blob = dnn.blobFromImage(image, 1, (224, 224), (104, 117, 123))
 network.setInput(blob)
 predictions = network.forward()
