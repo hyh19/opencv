@@ -10,7 +10,7 @@ class_path = 'model/synset_words.txt'
 # 加载神经网络和分类标签
 network = dnn.readNetFromCaffe(config_path, model_path)
 with open(class_path, 'rt') as f:
-    class_names = [line[line.find(" ") + 1:].strip() for line in f]
+    class_names = [line[line.find(' ') + 1:].strip() for line in f]
 
 # 图像预处理和前向传递
 image = cv.imread('smallcat.jpeg')
