@@ -5,8 +5,8 @@ import cv2
 # 预加载分类器
 face_classifier = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_default.xml')
 eye_classifier = cv2.CascadeClassifier('haarcascades/haarcascade_eye.xml')
-mouth_classifier = cv2.CascadeClassifier('haarcascades/haarcascade_mcs_mouth.xml')
 nose_classifier = cv2.CascadeClassifier('haarcascades/haarcascade_mcs_nose.xml')
+mouth_classifier = cv2.CascadeClassifier('haarcascades/haarcascade_mcs_mouth.xml')
 
 # 颜色
 blue = (255, 0, 0)
