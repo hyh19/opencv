@@ -45,7 +45,7 @@ class App:
         cv2.namedWindow('input')
         cv2.setMouseCallback('input', self.onmouse)
 
-        self.img = cv2.imread('./lena.png')
+        self.img = cv2.imread('../lena.png')
         self.img2 = self.img.copy()
         self.mask = np.zeros(self.img.shape[:2], dtype=np.uint8)
         self.output = np.zeros(self.img.shape, np.uint8)

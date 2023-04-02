@@ -3,6 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 # 运行结果 https://is.gd/nfLHXA
+# dist https://is.gd/BIMuZJ
 
 img = cv.imread('water_coins.jpeg')
 cv.imshow('img', img)
@@ -40,7 +41,7 @@ markers[unknown == 255] = 0
 
 markers = cv.watershed(img, markers)
 img[markers == -1] = [0, 0, 255]
-cv.imshow('result', img)
 
+cv.imshow('result', img)
 cv.waitKey()
 cv.destroyAllWindows()
