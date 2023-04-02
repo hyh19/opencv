@@ -2,15 +2,18 @@
 import cv2
 import numpy as np
 
-images = []
-images.append(cv2.imread("a1.png", cv2.IMREAD_GRAYSCALE))
-images.append(cv2.imread("a2.png", cv2.IMREAD_GRAYSCALE))
-images.append(cv2.imread("b1.png", cv2.IMREAD_GRAYSCALE))
-images.append(cv2.imread("b2.png", cv2.IMREAD_GRAYSCALE))
+# 读取图像并灰度化
+images = [cv2.imread(f"a{i}.png", cv2.IMREAD_GRAYSCALE) for i in range(1, 3)]
+images += [cv2.imread(f"b{i}.png", cv2.IMREAD_GRAYSCALE) for i in range(1, 3)]
 labels = [0, 0, 1, 1]
+
+# 训练人脸识别器
 recognizer = cv2.face.LBPHFaceRecognizer_create()
 recognizer.train(images, np.array(labels))
+
+# 预测新图像
 predict_image = cv2.imread("a3.png", cv2.IMREAD_GRAYSCALE)
 label, confidence = recognizer.predict(predict_image)
-print("label=", label)
-print("confidence=", confidence)
+
+# 输出预测结果
+print(f"label={label}, confidence={confidence}")
