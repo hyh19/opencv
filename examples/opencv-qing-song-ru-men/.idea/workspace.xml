@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48cac9f3-27ac-4169-980b-90a57f3f89c6" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/chapter23/23.1_2.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/23.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/chapter23/23.1_1.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chapter23/23.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter23/23.1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chapter23/23.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter23/23.2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chapter23/23.4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter23/23.4.py" afterDir="false" />
@@ -54,7 +56,7 @@
       <workItem from="1680093262917" duration="17000" />
       <workItem from="1680142356492" duration="14482000" />
       <workItem from="1680256981941" duration="3307000" />
-      <workItem from="1680436804009" duration="3645000" />
+      <workItem from="1680436804009" duration="4273000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1680143894050</created>
