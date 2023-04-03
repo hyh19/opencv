@@ -4,13 +4,13 @@ import numpy as np
 
 bgr = np.random.randint(0, 256, size=[2, 4, 3], dtype=np.uint8)
 gray = cv.cvtColor(bgr, cv.COLOR_BGR2GRAY)
-print("bgr=\n", bgr)
-print("gray=\n", gray)
-print("像素点(1,0)直接计算得到的值=",
+print('bgr=\n', bgr)
+print('gray=\n', gray)
+print('像素点(1,0)直接计算得到的值=',
       bgr[1, 0, 0] * 0.114 + bgr[1, 0, 1] * 0.587 + bgr[1, 0, 2] * 0.299)
-print("像素点(1,0)使用公式cv2.cvtColor()转换值=", gray[1, 0])
+print('像素点(1,0)使用公式cv2.cvtColor()转换值=', gray[1, 0])
 
-"""
+'''
 bgr=
  [[[123 208 102]
   [152  95  17]
@@ -26,4 +26,4 @@ gray=
  [152 157 100 185]]
 像素点(1,0)直接计算得到的值= 151.67399999999998
 像素点(1,0)使用公式cv2.cvtColor()转换值= 152
-"""
+'''

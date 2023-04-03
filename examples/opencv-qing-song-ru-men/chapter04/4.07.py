@@ -4,10 +4,10 @@ import numpy as np
 
 img = np.random.randint(0, 256, size=[5, 5], dtype=np.uint8)
 mask = cv.inRange(img, 100, 200)
-print("img=\n", img)
-print("mask=\n", mask)
+print('img=\n', img)
+print('mask=\n', mask)
 
-"""
+'''
 img=
  [[142 217 166 164  80]
  [109 230  27  60  25]
@@ -20,4 +20,4 @@ mask=
  [  0   0   0   0   0]
  [  0   0 255   0   0]
  [  0   0   0 255 255]]
-"""
+'''

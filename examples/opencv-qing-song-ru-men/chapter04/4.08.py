@@ -7,11 +7,11 @@ mask = np.zeros([5, 5], dtype=np.uint8)
 mask[0:3, 0] = 1
 mask[2:5, 2:4] = 1
 roi = cv.bitwise_and(img, img, mask=mask)
-print("img=\n", img)
-print("mask=\n", mask)
-print("roi=\n", roi)
+print('img=\n', img)
+print('mask=\n', mask)
+print('roi=\n', roi)
 
-"""
+'''
 img=
  [[9 9 9 9 9]
  [9 9 9 9 9]
@@ -30,4 +30,4 @@ roi=
  [9 0 9 9 0]
  [0 0 9 9 0]
  [0 0 9 9 0]]
-"""
+'''

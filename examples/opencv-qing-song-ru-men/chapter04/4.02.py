@@ -4,10 +4,10 @@ import numpy as np
 
 gray = np.random.randint(0, 256, size=[2, 4], dtype=np.uint8)
 bgr = cv.cvtColor(gray, cv.COLOR_GRAY2BGR)
-print("gray=\n", gray)
-print("bgr=\n", bgr)
+print('gray=\n', gray)
+print('bgr=\n', bgr)
 
-"""
+'''
 gray=
  [[109 116 247  61]
  [178  96 164 105]]
@@ -21,4 +21,4 @@ bgr=
   [ 96  96  96]
   [164 164 164]
   [105 105 105]]]
-"""
+'''

@@ -4,7 +4,7 @@ import numpy as np
 
 # 运行结果 https://is.gd/T9vQIX
 
-bgr = cv.imread("opencv.jpg")
+bgr = cv.imread('opencv.jpg')
 hsv = cv.cvtColor(bgr, cv.COLOR_BGR2HSV)
 cv.imshow('bgr', bgr)
 

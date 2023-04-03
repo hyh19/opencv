@@ -5,11 +5,11 @@ import numpy as np
 bgr = np.random.randint(0, 256, size=[2, 4, 3], dtype=np.uint8)
 rgb = cv.cvtColor(bgr, cv.COLOR_BGR2RGB)
 bgr1 = cv.cvtColor(rgb, cv.COLOR_RGB2BGR)
-print("bgr=\n", bgr)
-print("rgb=\n", rgb)
-print("bgr1=\n", bgr1)
+print('bgr=\n', bgr)
+print('rgb=\n', rgb)
+print('bgr1=\n', bgr1)
 
-"""
+'''
 bgr=
  [[[214 108  40]
   [ 86 125 226]
@@ -40,4 +40,4 @@ bgr1=
   [117 166 232]
   [220  99 120]
   [238  28 121]]]
-"""
+'''
