@@ -4,8 +4,8 @@ import numpy as np
 
 # 运行结果 https://is.gd/a1Xfr6
 
-gray = cv.imread("lena.bmp", cv.IMREAD_GRAYSCALE)
-cv.imshow("gray", gray)
+gray = cv.imread('lena.bmp', cv.IMREAD_GRAYSCALE)
+cv.imshow('gray', gray)
 
 rows, cols = gray.shape
 planes = np.zeros((rows, cols, 8), dtype=np.uint8)

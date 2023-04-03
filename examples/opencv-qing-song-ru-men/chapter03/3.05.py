@@ -3,11 +3,11 @@ import cv2 as cv
 
 # 运行结果 https://is.gd/CRt5AO
 
-boat = cv.imread("boat.bmp")
-lena = cv.imread("lena.bmp")
+boat = cv.imread('boat.bmp')
+lena = cv.imread('lena.bmp')
 result = cv.addWeighted(boat, 0.6, lena, 0.4, 0)
-cv.imshow("boat", boat)
-cv.imshow("lena", lena)
-cv.imshow("result", result)
+cv.imshow('boat', boat)
+cv.imshow('lena', lena)
+cv.imshow('result', result)
 cv.waitKey()
 cv.destroyAllWindows()

@@ -6,9 +6,9 @@ import numpy as np
 # 运行结果 https://is.gd/404PE9
 
 # 读取原始载体图像
-lena = cv.imread("lena.bmp", cv.IMREAD_GRAYSCALE)
+lena = cv.imread('lena.bmp', cv.IMREAD_GRAYSCALE)
 # 读取水印图像
-watermark_img = cv.imread("watermark.bmp", cv.IMREAD_GRAYSCALE)
+watermark_img = cv.imread('watermark.bmp', cv.IMREAD_GRAYSCALE)
 # 将水印内的 255 处理为 1，以方便嵌入
 watermark_img[watermark_img[:, :] > 0] = 1
 
@@ -30,10 +30,10 @@ extracted_img = cv.bitwise_and(embedded_img, m1)
 # 将水印内的 1 处理为 255 以方便显示
 extracted_img[extracted_img[:, :] > 0] = 255
 
-cv.imshow("lena", lena)
+cv.imshow('lena', lena)
 # 当前 watermark_img 内最大值为 1
-cv.imshow("watermark_img", watermark_img * 255)
-cv.imshow("embedded_img", embedded_img)
-cv.imshow("extracted_img", extracted_img)
+cv.imshow('watermark_img', watermark_img * 255)
+cv.imshow('embedded_img', embedded_img)
+cv.imshow('extracted_img', extracted_img)
 cv.waitKey()
 cv.destroyAllWindows()
