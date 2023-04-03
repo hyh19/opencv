@@ -2,7 +2,7 @@
 import cv2 as cv
 import numpy as np
 
-img = np.random.randint(0, 255, (5, 5), dtype=np.uint8)
+img = np.random.randint(0, 255, size=(5, 5), dtype=np.uint8)
 mask = np.zeros((5, 5), dtype=np.uint8)
 mask[0:3, 0:3] = 255
 mask[4, 4] = 255

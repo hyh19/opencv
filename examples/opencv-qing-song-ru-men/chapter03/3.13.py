@@ -10,7 +10,8 @@ cv.imshow('gray', gray)
 rows, cols = gray.shape
 planes = np.zeros((rows, cols, 8), dtype=np.uint8)
 for i in range(8):
-    bit_plane = cv.bitwise_and(gray, (2 ** i) * np.ones((rows, cols), dtype=np.uint8))
+    x = (2 ** i) * np.ones(gray.shape, dtype=np.uint8)
+    bit_plane = cv.bitwise_and(gray, x)
     bit_plane[bit_plane > 0] = 255
     cv.imshow(f'bit plane {i}', bit_plane)
     planes[:, :, i] = bit_plane
