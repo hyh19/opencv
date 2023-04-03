@@ -2,32 +2,32 @@
 import cv2 as cv
 import numpy as np
 
-a = np.random.randint(0, 255, (5, 5), dtype=np.uint8)
-b = np.zeros((5, 5), dtype=np.uint8)
-b[0:3, 0:3] = 255
-b[4, 4] = 255
-c = cv.bitwise_and(a, b)
-print('a=\n', a)
-print('b=\n', b)
-print('c=\n', c)
+img = np.random.randint(0, 255, (5, 5), dtype=np.uint8)
+mask = np.zeros((5, 5), dtype=np.uint8)
+mask[0:3, 0:3] = 255
+mask[4, 4] = 255
+result = cv.bitwise_and(img, mask)
+print('img=\n', img)
+print('mask=\n', mask)
+print('result=\n', result)
 
 '''
-a=
- [[ 22  46  92  21  83]
- [ 11 160 241 150 234]
- [ 28  51  41 162  17]
- [184 224  59 140 186]
- [200 204 168 106 115]]
-b=
+img=
+ [[233 241 152 193 133]
+ [  8  56  59  51  29]
+ [109  44 126  13   0]
+ [227 146 247  81 221]
+ [ 60  79 111   7 147]]
+mask=
  [[255 255 255   0   0]
  [255 255 255   0   0]
  [255 255 255   0   0]
  [  0   0   0   0   0]
  [  0   0   0   0 255]]
-c=
- [[ 22  46  92   0   0]
- [ 11 160 241   0   0]
- [ 28  51  41   0   0]
+result=
+ [[233 241 152   0   0]
+ [  8  56  59   0   0]
+ [109  44 126   0   0]
  [  0   0   0   0   0]
- [  0   0   0   0 115]]
+ [  0   0   0   0 147]]
 '''
