@@ -3,40 +3,37 @@ import cv2 as cv
 import numpy as np
 
 # 运行结果 https://bit.ly/3kPPX4b
+# 运行结果 https://is.gd/404PE9
 
 # 读取原始载体图像
 lena = cv.imread("lena.bmp", cv.IMREAD_GRAYSCALE)
 # 读取水印图像
-watermark = cv.imread("watermark.bmp", cv.IMREAD_GRAYSCALE)
-# 将水印内的255处理为1，以方便嵌入
-w = watermark[:, :] > 0
-watermark[w] = 1
-# 读取原始载体图像的shape值
-r, c = lena.shape
+watermark_img = cv.imread("watermark.bmp", cv.IMREAD_GRAYSCALE)
+# 将水印内的 255 处理为 1，以方便嵌入
+watermark_img[watermark_img[:, :] > 0] = 1
 
-# ============嵌入过程============
-# 生成内部值都是254的数组
-t254 = np.ones((r, c), dtype=np.uint8) * 254
-# 获取lena图像的高7位
-lenaH7 = cv.bitwise_and(lena, t254)
-# 将watermark嵌入到lenaH7内
-e = cv.bitwise_or(lenaH7, watermark)
+# ========嵌入过程========
+# 读取原始载体图像的 shape 值
+rows, cols = lena.shape
+# 生成内部值都是 254 的提取矩阵
+m254 = np.ones((rows, cols), dtype=np.uint8) * 254
+# 获取 lena 图像的高 7 位
+lena_h7 = cv.bitwise_and(lena, m254)
+# 将 watermark 嵌入到 lena_h7 内
+embedded_img = cv.bitwise_or(lena_h7, watermark_img)
 
-# ============提取过程============
-# 生成内部值都是1的数组
-t1 = np.ones((r, c), dtype=np.uint8)
+# ========提取过程========
+# 生成内部值都是 1 的提取矩阵
+m1 = np.ones((rows, cols), dtype=np.uint8)
 # 从载体图像内，提取水印图像
-wm = cv.bitwise_and(e, t1)
-print(wm)
-# 将水印内的1处理为255以方便显示
-w = wm[:, :] > 0
-wm[w] = 255
+extracted_img = cv.bitwise_and(embedded_img, m1)
+# 将水印内的 1 处理为 255 以方便显示
+extracted_img[extracted_img[:, :] > 0] = 255
 
-# ============显示============
 cv.imshow("lena", lena)
-cv.imshow("watermark", watermark * 255)  # 当前watermark内最大值为1
-cv.imshow("e", e)
-cv.imshow("wm", wm)
-
+# 当前 watermark_img 内最大值为 1
+cv.imshow("watermark_img", watermark_img * 255)
+cv.imshow("embedded_img", embedded_img)
+cv.imshow("extracted_img", extracted_img)
 cv.waitKey()
 cv.destroyAllWindows()
