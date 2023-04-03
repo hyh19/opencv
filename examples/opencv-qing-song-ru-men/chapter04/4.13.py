@@ -1,21 +1,25 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
 
-# 运行结果 https://bit.ly/3ZwRATe
+# 运行结果 https://is.gd/uLHVYH
 
-img = cv.imread("lenacolor.png")
-bgra = cv.cvtColor(img, cv.COLOR_BGR2BGRA)
-b, g, r, a = cv.split(bgra)
-a[:, :] = 125
-bgra125 = cv.merge([b, g, r, a])
-a[:, :] = 0
-bgra0 = cv.merge([b, g, r, a])
-cv.imshow("img", img)
-cv.imshow("bgra", bgra)
-cv.imshow("bgra125", bgra125)
-cv.imshow("bgra0", bgra0)
+bgr = cv.imread("lenacolor.png")
+cv.imshow("bgr", bgr)
+
+bgr_alpha_255 = cv.cvtColor(bgr, cv.COLOR_BGR2BGRA)
+blue, green, red, alpha = cv.split(bgr_alpha_255)
+cv.imshow("bgr_alpha_255", bgr_alpha_255)
+cv.imwrite("bgr_alpha_255.png", bgr_alpha_255)
+
+alpha[:, :] = 125
+bgr_alpha_125 = cv.merge([blue, green, red, alpha])
+cv.imshow("bgr_alpha_125", bgr_alpha_125)
+cv.imwrite("bgr_alpha_125.png", bgr_alpha_125)
+
+alpha[:, :] = 0
+bgr_alpha_0 = cv.merge([blue, green, red, alpha])
+cv.imshow("bgr_alpha_0", bgr_alpha_0)
+cv.imwrite("bgr_alpha_0.png", bgr_alpha_0)
+
 cv.waitKey()
 cv.destroyAllWindows()
-# cv.imwrite("bgra.png", bgra)
-# cv.imwrite("bgra125.png", bgra125)
-# cv.imwrite("bgra0.png", bgra0)

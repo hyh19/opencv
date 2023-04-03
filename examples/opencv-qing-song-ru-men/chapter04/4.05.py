@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
 
-lena = cv.imread("lenacolor.png")
-rgb = cv.cvtColor(lena, cv.COLOR_BGR2RGB)
-bgr = cv.cvtColor(rgb, cv.COLOR_RGB2BGR)
-cv.imshow("lena", lena)
-cv.imshow("rgb", rgb)
+# 运行结果 https://is.gd/HwXMyr
+
+bgr = cv.imread("lenacolor.png")
+rgb = cv.cvtColor(bgr, cv.COLOR_BGR2RGB)
+bgr1 = cv.cvtColor(rgb, cv.COLOR_RGB2BGR)
 cv.imshow("bgr", bgr)
+cv.imshow("rgb", rgb)
+cv.imshow("bgr1", bgr1)
 cv.waitKey()
 cv.destroyAllWindows()
