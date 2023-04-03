@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
 
-a = cv.imread("lena.bmp", cv.IMREAD_GRAYSCALE)
-b = a
-result1 = a + b
-result2 = cv.add(a, b)
-cv.imshow("original", a)
-cv.imshow("result1", result1)
-cv.imshow("result2", result2)
+img_gray = cv.imread("lena.bmp", cv.IMREAD_GRAYSCALE)
+img_copy = img_gray.copy()
+result1 = img_gray + img_copy
+result2 = cv.add(img_gray, img_copy)
+cv.imshow("Original", img_gray)
+cv.imshow("Result1", result1)
+cv.imshow("Result2", result2)
 cv.waitKey()
 cv.destroyAllWindows()
