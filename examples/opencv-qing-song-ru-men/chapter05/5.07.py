@@ -2,15 +2,25 @@
 import cv2 as cv
 import numpy as np
 
-# 运行结果 https://bit.ly/3Jnr5ZV
+# 运行结果 https://is.gd/kdxQZk
 
 img = cv.imread('lena.bmp')
-rows, cols, ch = img.shape
-p1 = np.float32([[0, 0], [cols - 1, 0], [0, rows - 1]])
-p2 = np.float32([[0, rows * 0.33], [cols * 0.85, rows * 0.25], [cols * 0.15, rows * 0.7]])
-M = cv.getAffineTransform(p1, p2)
-dst = cv.warpAffine(img, M, (cols, rows))
-cv.imshow('origianl', img)
-cv.imshow('result', dst)
+ySize, xSize = img.shape[:2]
+
+p1 = [0, 0]
+p2 = [xSize - 1, 0]
+p3 = [0, ySize - 1]
+pts1 = np.float32([p1, p2, p3])
+
+q1 = [0, ySize * 0.33]
+q2 = [xSize * 0.85, ySize * 0.25]
+q3 = [xSize * 0.15, ySize * 0.7]
+pts2 = np.float32([q1, q2, q3])
+
+M = cv.getAffineTransform(pts1, pts2)
+res = cv.warpAffine(img, M, (xSize, ySize))
+
+cv.imshow('img', img)
+cv.imshow('res', res)
 cv.waitKey()
 cv.destroyAllWindows()
