@@ -2,7 +2,7 @@
 import cv2 as cv
 import numpy as np
 
-bgr = np.random.randint(0, 256, size=[2, 4, 3], dtype=np.uint8)
+bgr = np.random.randint(0, 256, size=(2, 4, 3), dtype=np.uint8)
 gray = cv.cvtColor(bgr, cv.COLOR_BGR2GRAY)
 print('bgr=\n', bgr)
 print('gray=\n', gray)
