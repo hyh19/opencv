@@ -2,16 +2,20 @@
 import cv2 as cv
 import numpy as np
 
+# 运行结果 https://is.gd/JtLpkr
+
 img = cv.imread('lena.bmp')
-rows, cols = img.shape[:2]
+row_size, col_size = img.shape[:2]
 map_row = np.zeros(img.shape[:2], np.float32)
 map_col = np.zeros(img.shape[:2], np.float32)
-for r in range(rows):
-    for c in range(cols):
-        map_row.itemset((r, c), rows - 1 - r)
-        map_col.itemset((r, c), c)
-rst = cv.remap(img, map_col, map_row, cv.INTER_LINEAR)
-cv.imshow('original', img)
-cv.imshow('result', rst)
+
+for row in range(row_size):
+    for col in range(col_size):
+        map_row.itemset((row, col), row_size - 1 - row)
+        map_col.itemset((row, col), col)
+
+res = cv.remap(img, map_col, map_row, cv.INTER_LINEAR)
+cv.imshow('img', img)
+cv.imshow('res', res)
 cv.waitKey()
 cv.destroyAllWindows()
