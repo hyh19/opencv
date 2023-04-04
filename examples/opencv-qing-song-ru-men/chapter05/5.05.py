@@ -4,13 +4,13 @@ import numpy as np
 
 # 运行结果 https://bit.ly/3T3oh8z
 
-img = cv.imread("lena.bmp")
-height, width = img.shape[:2]
-x = 100
-y = 200
-M = np.float32([[1, 0, x], [0, 1, y]])
-move = cv.warpAffine(img, M, (width, height))
-cv.imshow("original", img)
-cv.imshow("move", move)
+img = cv.imread('lena.bmp')
+ySize, xSize = img.shape[:2]
+xMove = 100
+yMove = 200
+M = np.float32([[1, 0, xMove], [0, 1, yMove]])
+move = cv.warpAffine(img, M, (xSize, ySize))
+cv.imshow('original', img)
+cv.imshow('move', move)
 cv.waitKey()
 cv.destroyAllWindows()
