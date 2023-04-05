@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-"""
+'''
 Created on Wed Jun 29 08:16:09 2018
 
 @author: 天津拨云咨询服务有限公司  lilizong@gmail.com
-"""
+'''
 import cv2 as cv
 import numpy as np
 def saltpepper(img,n):
