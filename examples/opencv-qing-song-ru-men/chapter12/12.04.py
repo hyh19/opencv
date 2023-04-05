@@ -2,25 +2,22 @@
 import cv2 as cv
 import numpy as np
 
-o = cv.imread('moments.bmp')
-cv.imshow("original", o)
-gray = cv.cvtColor(o, cv.COLOR_BGR2GRAY)
-ret, binary = cv.threshold(gray, 127, 255, cv.THRESH_BINARY)
-image, contours, hierarchy = cv.findContours(binary,
-                                              cv.RETR_LIST,
-                                              cv.CHAIN_APPROX_SIMPLE)
+# 运行结果 https://is.gd/LzXi5z
+
+img = cv.imread('moments.bmp')
+cv.imshow("img", img)
+gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+_, binary = cv.threshold(gray, 127, 255, cv.THRESH_BINARY)
+_, contours, hierarchy = cv.findContours(binary, cv.RETR_LIST, cv.CHAIN_APPROX_SIMPLE)
 n = len(contours)
-contoursImg = []
 for i in range(n):
-    temp = np.zeros(image.shape, np.uint8)
-    contoursImg.append(temp)
-    contoursImg[i] = cv.drawContours(contoursImg[i], contours, i, 255, 3)
-    cv.imshow("contours[" + str(i) + "]", contoursImg[i])
-print("观察各个轮廓的矩（moments）:")
-for i in range(n):
-    print("轮廓" + str(i) + "的矩:\n", cv.moments(contours[i]))
-print("观察各个轮廓的面积:")
-for i in range(n):
-    print("轮廓" + str(i) + "的面积:%d" % cv.moments(contours[i])['m00'])
+    temp = np.zeros(img.shape, np.uint8)
+    cv.drawContours(temp, contours, i, (255, 255, 255), 3)
+    cv.imshow(f'contours[{i}]', temp)
+
+    moments = cv.moments(contours[i])
+    print(f'轮廓 {i} 的矩: {moments}')
+    m00 = moments["m00"]
+    print(f'轮廓 {i} 的面积: {m00}')
 cv.waitKey()
 cv.destroyAllWindows()

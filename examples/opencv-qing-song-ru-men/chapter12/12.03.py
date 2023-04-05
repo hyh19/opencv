@@ -2,21 +2,24 @@
 import cv2 as cv
 import numpy as np
 
-# 运行结果 https://bit.ly/40iYegB
+# 运行结果 https://is.gd/ZWzDrn
 
-o = cv.imread('loc3.jpg')
-cv.imshow("original", o)
-gray = cv.cvtColor(o, cv.COLOR_BGR2GRAY)
+img = cv.imread('loc3.jpg')
+cv.imshow("img", img)
+
+gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow("gray", gray)
-ret, binary = cv.threshold(gray, 127, 255, cv.THRESH_BINARY)
+
+_, binary = cv.threshold(gray, 127, 255, cv.THRESH_BINARY)
 cv.imshow("binary", binary)
-image, contours, hierarchy = cv.findContours(binary,
-                                              cv.RETR_LIST,
-                                              cv.CHAIN_APPROX_SIMPLE)
-mask = np.zeros(o.shape, np.uint8)
+
+_, contours, hierarchy = cv.findContours(binary, cv.RETR_LIST, cv.CHAIN_APPROX_SIMPLE)
+mask = np.zeros(img.shape, np.uint8)
 mask = cv.drawContours(mask, contours, -1, (255, 255, 255), -1)
 cv.imshow("mask", mask)
-loc = cv.bitwise_and(o, mask)
-cv.imshow("location", loc)
+
+fg = cv.bitwise_and(img, mask)
+cv.imshow("fg", fg)
+
 cv.waitKey()
 cv.destroyAllWindows()
