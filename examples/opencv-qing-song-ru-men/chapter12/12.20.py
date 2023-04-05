@@ -1,13 +1,27 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
 
-o = cv.imread('contours.bmp')
-gray = cv.cvtColor(o, cv.COLOR_BGR2GRAY)
-ret, binary = cv.threshold(gray, 127, 255, cv.THRESH_BINARY)
-image, contours, hierarchy = cv.findContours(binary,
-                                              cv.RETR_TREE,
-                                              cv.CHAIN_APPROX_SIMPLE)
-hull = cv.convexHull(contours[0])  # 返回坐标值
-print("returnPoints为默认值True时返回值hull的值：\n", hull)
-hull2 = cv.convexHull(contours[0], returnPoints=False)  # 返回索引值
-print("returnPoints为False时返回值hull的值：\n", hull2)
+img = cv.imread('contours.bmp')
+gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+_, binary = cv.threshold(gray, 127, 255, cv.THRESH_BINARY)
+_, contours, hierarchy = cv.findContours(binary, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
+hull1 = cv.convexHull(contours[0])
+print(f'returnPoints = True: \n{hull1}')
+hull2 = cv.convexHull(contours[0], returnPoints=False)
+print(f'returnPoints = False: \n{hull2}')
+
+'''
+returnPoints = True: 
+[[[195 270]]
+
+ [[195 383]]
+
+ [[ 79 383]]
+
+ [[ 79 270]]]
+returnPoints = False: 
+[[3]
+ [2]
+ [1]
+ [0]]
+'''
