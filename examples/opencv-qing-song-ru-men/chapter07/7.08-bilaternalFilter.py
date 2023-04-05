@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
 
-o = cv.imread('lenaNoise.png')
-r = cv.bilateralFilter(o, 25, 100, 100)
-cv.imshow('original', o)
-cv.imshow('result', r)
+# 运行结果 https://is.gd/TumFFY
+
+img = cv.imread('lenaNoise.png')
+res = cv.bilateralFilter(img, 25, 100, 100)
+cv.imshow('img', img)
+cv.imshow('res', res)
 cv.waitKey()
 cv.destroyAllWindows()

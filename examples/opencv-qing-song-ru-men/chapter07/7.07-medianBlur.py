@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
 
-o = cv.imread('lenaNoise.png')
-r = cv.medianBlur(o, 3)
-cv.imshow('original', o)
-cv.imshow('result', r)
+img = cv.imread('lenaNoise.png')
+res = cv.medianBlur(img, 3)
+cv.imshow('img', img)
+cv.imshow('res', res)
 cv.waitKey()
 cv.destroyAllWindows()
