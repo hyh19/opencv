@@ -1,46 +1,50 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
 
-# ----------------原始图像-------------------------
-o = cv.imread('cs.bmp')
-cv.imshow("original", o)
+# 运行结果 https://is.gd/DLY55L
 
-# ----------------获取凸包------------------------
-gray = cv.cvtColor(o, cv.COLOR_BGR2GRAY)
-ret, binary = cv.threshold(gray, 127, 255, cv.THRESH_BINARY)
-image, contours, hierarchy = cv.findContours(binary,
-                                              cv.RETR_LIST,
-                                              cv.CHAIN_APPROX_SIMPLE)
+img = cv.imread('cs.bmp')
+gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+_, binary = cv.threshold(gray, 127, 255, cv.THRESH_BINARY)
+_, contours, hierarchy = cv.findContours(binary, cv.RETR_LIST, cv.CHAIN_APPROX_SIMPLE)
+
+# 凸包
+green = (0, 255, 0)
+# 点
+red = (0, 0, 255)
+# 文字
+blue = (255, 0, 0)
+
 hull = cv.convexHull(contours[0])
-image = cv.cvtColor(image, cv.COLOR_GRAY2BGR)
-cv.polylines(image, [hull], True, (0, 255, 0), 2)
+cv.polylines(img, [hull], True, green, 2)
 
-# ----------------内部点A的距离-------------------------
 ptA = (300, 150)
 distA = cv.pointPolygonTest(hull, ptA, False)
 font = cv.FONT_HERSHEY_SIMPLEX
-cv.putText(image, 'A', ptA, font, 1, (0, 255, 0), 3)
-cv.circle(image, ptA, 3, [255, 0, 0], -1)
-print("distA=", distA)
+cv.putText(img, 'A', ptA, font, 1, blue, 2)
+cv.circle(img, ptA, 5, red, -1)
+print(f'distA = {distA}')
 
-# ----------------外部点B的距离-------------------------
 ptB = (300, 250)
 distB = cv.pointPolygonTest(hull, ptB, False)
 font = cv.FONT_HERSHEY_SIMPLEX
-cv.putText(image, 'B', ptB, font, 1, (0, 255, 0), 3)
-cv.circle(image, ptB, 3, [255, 0, 0], -1)
-print("distB=", distB)
+cv.putText(img, 'B', ptB, font, 1, blue, 2)
+cv.circle(img, ptB, 5, red, -1)
+print(f'distB = {distB}')
 
-# ------------正好处于边缘上的点C的距离-----------------
 ptC = (423, 112)
 distC = cv.pointPolygonTest(hull, ptC, False)
 font = cv.FONT_HERSHEY_SIMPLEX
-cv.putText(image, 'C', ptC, font, 1, (0, 255, 0), 3)
-cv.circle(image, ptC, 3, [255, 0, 0], -1)
-print("distC=", distC)
-# print(hull)   #测试边缘到底在哪里，然后再使用确定位置的
+cv.putText(img, 'C', ptC, font, 1, blue, 2)
+cv.circle(img, ptC, 5, red, -1)
+print(f'distC = {distC}')
 
-# ----------------显示-------------------------
-cv.imshow("result", image)
+cv.imshow("result", img)
 cv.waitKey()
 cv.destroyAllWindows()
+
+'''
+distA = 1.0
+distB = -1.0
+distC = 0.0
+'''
