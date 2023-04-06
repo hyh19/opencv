@@ -1,31 +1,20 @@
 import cv2 as cv
 import numpy as np
 
-blue_bgr = np.zeros([1, 1, 3], dtype=np.uint8)
-blue_bgr[0, 0, 0] = 255
-blue_hsv = cv.cvtColor(blue_bgr, cv.COLOR_BGR2HSV)
-print('blue_bgr=\n', blue_bgr)
-print('blue_hsv=\n', blue_hsv)
+bgr = cv.imread('opencv.jpg')
+hsv = cv.cvtColor(bgr, cv.COLOR_BGR2HSV)
+cv.imshow('bgr', bgr)
 
-green_bgr = np.zeros([1, 1, 3], dtype=np.uint8)
-green_bgr[0, 0, 1] = 255
-green_hsv = cv.cvtColor(green_bgr, cv.COLOR_BGR2HSV)
-print('green_bgr=\n', green_bgr)
-print('green_hsv=\n', green_hsv)
+blue_range = (110, 130)
+green_range = (50, 70)
+red_range = (0, 30)
+color_range_list = [blue_range, green_range, red_range]
+color_name_list = ['blue', 'green', 'red']
+for color_range, color_name in zip(color_range_list, color_name_list):
+    lower, upper = color_range
+    mask = cv.inRange(hsv, (lower, 50, 50), (upper, 255, 255))
+    res = cv.bitwise_and(bgr, bgr, mask=mask)
+    cv.imshow(color_name, res)
 
-red_bgr = np.zeros([1, 1, 3], dtype=np.uint8)
-red_bgr[0, 0, 2] = 255
-red_hsv = cv.cvtColor(red_bgr, cv.COLOR_BGR2HSV)
-print('red_bgr=\n', red_bgr)
-print('red_hsv=\n', red_hsv)
-
-# bgr = cv.imread('lenacolor.png')
-# rgb = cv.cvtColor(bgr, cv.COLOR_BGR2RGB)
-# bgr1 = cv.cvtColor(rgb, cv.COLOR_RGB2BGR)
-#
-# cv.imshow('bgr', bgr)
-# cv.imshow('rgb', rgb)
-# cv.imshow('bgr1', bgr1)
-# cv.waitKey()
-# cv.destroyAllWindows()
-
+cv.waitKey()
+cv.destroyAllWindows()

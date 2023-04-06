@@ -1,30 +1,23 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
-import numpy as np
-
-# 运行结果 https://is.gd/T9vQIX
 
 bgr = cv.imread('opencv.jpg')
-hsv = cv.cvtColor(bgr, cv.COLOR_BGR2HSV)
 cv.imshow('bgr', bgr)
 
-min_blue = np.array([110, 50, 50])
-max_blue = np.array([130, 255, 255])
-mask = cv.inRange(hsv, min_blue, max_blue)
-blue = cv.bitwise_and(bgr, bgr, mask=mask)
-cv.imshow('blue', blue)
+hsv = cv.cvtColor(bgr, cv.COLOR_BGR2HSV)
+blue_range = (110, 130)
+green_range = (50, 70)
+red_range = (0, 30)
+color_range_list = [blue_range, green_range, red_range]
+color_name_list = ['blue', 'green', 'red']
 
-min_green = np.array([50, 50, 50])
-max_green = np.array([70, 255, 255])
-mask = cv.inRange(hsv, min_green, max_green)
-green = cv.bitwise_and(bgr, bgr, mask=mask)
-cv.imshow('green', green)
-
-min_red = np.array([0, 50, 50])
-max_red = np.array([30, 255, 255])
-mask = cv.inRange(hsv, min_red, max_red)
-red = cv.bitwise_and(bgr, bgr, mask=mask)
-cv.imshow('red', red)
+for color_range, color_name in zip(color_range_list, color_name_list):
+    lower, upper = color_range
+    mask = cv.inRange(hsv, (lower, 50, 50), (upper, 255, 255))
+    res = cv.bitwise_and(bgr, bgr, mask=mask)
+    cv.imshow(color_name, res)
 
 cv.waitKey()
 cv.destroyAllWindows()
+
+# 运行结果 https://is.gd/T9vQIX
