@@ -3,19 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="48cac9f3-27ac-4169-980b-90a57f3f89c6" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/12.27.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/12.27.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/12.28.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/12.28.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/12.29.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/12.29.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/12.30.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/12.30.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/12.31.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/12.31.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/12.32.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/12.33.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/12.33.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/12.34.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/12.34.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/12.35.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/12.35.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/12.36.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/12.37.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/12.37.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/12.38.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/12.38.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/12.39.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/12.39.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +65,7 @@
       <workItem from="1680623248100" duration="1290000" />
       <workItem from="1680657729175" duration="11880000" />
       <workItem from="1680681280409" duration="7766000" />
-      <workItem from="1680752880315" duration="8190000" />
+      <workItem from="1680752880315" duration="9263000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1680143894050</created>
