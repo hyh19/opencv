@@ -1,43 +1,33 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
-import numpy as np
 
-o = cv.imread('cs.bmp')
+# 运行结果 https://is.gd/NZZnLl
 
-# --------获取并绘制轮廓-----------------
-gray = cv.cvtColor(o, cv.COLOR_BGR2GRAY)
-ret, binary = cv.threshold(gray, 127, 255, cv.THRESH_BINARY)
-image, contours, hierarchy = cv.findContours(binary, cv.RETR_LIST, cv.CHAIN_APPROX_SIMPLE)
-mask = np.zeros(gray.shape, np.uint8)
+img = cv.imread('cs.bmp')
+gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+_, binary = cv.threshold(gray, 127, 255, cv.THRESH_BINARY)
+_, contours, _ = cv.findContours(binary, cv.RETR_LIST, cv.CHAIN_APPROX_SIMPLE)
+
 cnt = contours[0]
-cv.drawContours(mask, [cnt], 0, 255, -1)
+# x 坐标最小的点
+left_most = tuple(cnt[cnt[:, :, 0].argmin()][0])
+# x 坐标最大的点
+right_most = tuple(cnt[cnt[:, :, 0].argmax()][0])
+# y 坐标最小的点
+top_most = tuple(cnt[cnt[:, :, 1].argmin()][0])
+# y 坐标最大的点
+bottom_most = tuple(cnt[cnt[:, :, 1].argmax()][0])
 
-# --------计算极值-----------------
-leftmost = tuple(cnt[cnt[:, :, 0].argmin()][0])
-rightmost = tuple(cnt[cnt[:, :, 0].argmax()][0])
-topmost = tuple(cnt[cnt[:, :, 1].argmin()][0])
-bottommost = tuple(cnt[cnt[:, :, 1].argmax()][0])
+print(f'leftmost = {left_most}')
+print(f'rightmost = {right_most}')
+print(f'topmost = {top_most}')
+print(f'bottommost = {bottom_most}')
 
-# --------计算极值-----------------
-print("leftmost=", leftmost)
-print("rightmost=", rightmost)
-print("topmost=", topmost)
-print("bottommost=", bottommost)
-
-# --------绘制说明文字-----------------
-font = cv.FONT_HERSHEY_SIMPLEX
-cv.putText(o, 'A', leftmost, font, 1, (0, 0, 255), 2)
-cv.circle(o, leftmost, 3, [255, 0, 0], -1)
-cv.putText(o, 'B', rightmost, font, 1, (0, 0, 255), 2)
-cv.circle(o, rightmost, 3, [255, 0, 0], -1)
-cv.putText(o, 'C', topmost, font, 1, (0, 0, 255), 2)
-cv.circle(o, topmost, 3, [255, 0, 0], -1)
-cv.putText(o, 'D', bottommost, font, 1, (0, 0, 255), 2)
-cv.circle(o, bottommost, 3, [255, 0, 0], -1)
-
-# --------绘制图像-----------------
-cv.imshow("result", o)
-
-# --------释放窗口-----------------
+texts = ['A', 'B', 'C', 'D']
+pts = [left_most, right_most, top_most, bottom_most]
+for text, pt in zip(texts, pts):
+    cv.putText(img, text, pt, cv.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
+    cv.circle(img, pt, 3, [255, 0, 0], -1)
+cv.imshow("result", img)
 cv.waitKey()
 cv.destroyAllWindows()

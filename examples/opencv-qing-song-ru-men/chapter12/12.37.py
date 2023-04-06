@@ -2,36 +2,42 @@
 import cv2 as cv
 import numpy as np
 
-o = cv.imread('ct.png')
-cv.imshow("original", o)
-gray = cv.cvtColor(o, cv.COLOR_BGR2GRAY)
-ret, binary = cv.threshold(gray, 127, 255, cv.THRESH_BINARY)
-image, contours, hierarchy = cv.findContours(binary,
-                                              cv.RETR_LIST,
-                                              cv.CHAIN_APPROX_SIMPLE)
-cnt = contours[2]  # coutours[0]、coutours[1]是左侧字母R
+# 运行结果 https://is.gd/xIzPBH
 
-# --------使用掩膜获取感兴趣区域的最值-----------------
-# 需要注意minMaxLoc处理的对象为灰度图像，本例中处理对象为灰度图像gray
-# 如果希望获取彩色图像的，需要提取各个通道，将每个通道独立计算最值
-mask = np.zeros(gray.shape, np.uint8)
-mask = cv.drawContours(mask, [cnt], -1, 255, -1)
-cv.imshow("mask", mask)
-minVal, maxVal, minLoc, maxLoc = cv.minMaxLoc(gray, mask=mask)
-print("minVal=", minVal)
-print("maxVal=", maxVal)
-print("minLoc=", minLoc)
-print("maxLoc=", maxLoc)
+img = cv.imread('ct.png')
+cv.imshow("img", img)
 
-# --------使用掩膜获取感兴趣区域并显示-----------------
-masko = np.zeros(o.shape, np.uint8)
-masko = cv.drawContours(masko, [cnt], -1, (255, 255, 255), -1)
-loc = cv.bitwise_and(o, masko)
-cv.imshow("loc", loc)
-# 显示灰度结果
-loc_gray = cv.bitwise_and(gray, mask)
-cv.imshow("loc_gray", loc_gray)
+gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+_, binary = cv.threshold(gray, 127, 255, cv.THRESH_BINARY)
+_, contours, _ = cv.findContours(binary, cv.RETR_LIST, cv.CHAIN_APPROX_SIMPLE)
+img_contours = img.copy()
+cv.drawContours(img_contours, contours, -1, (255, 0, 0), 2)
+cv.imshow("img_contours", img_contours)
 
-# --------释放窗口-----------------
+cnt = contours[2]
+
+# 单通道
+mask1 = np.zeros(gray.shape, np.uint8)
+mask1 = cv.drawContours(mask1, [cnt], -1, 255, -1)
+cv.imshow("mask1", mask1)
+
+gray_mask1 = cv.bitwise_and(gray, mask1)
+cv.imshow('gray_mask1', gray_mask1)
+
+min_val, max_val, min_loc, max_loc = cv.minMaxLoc(gray, mask=mask1)
+print(f'min_val = {min_val}, max_val = {max_val}')
+print(f'min_loc = {min_loc}, max_loc = {max_loc}')
+
+# 三通道
+mask3 = np.zeros(img.shape, np.uint8)
+mask3 = cv.drawContours(mask3, [cnt], -1, (255, 255, 255), -1)
+res = cv.bitwise_and(img, mask3)
+cv.imshow("res", res)
+
 cv.waitKey()
 cv.destroyAllWindows()
+
+'''
+min_val = 42.0, max_val = 200.0
+min_loc = (87, 90), max_loc = (90, 110)
+'''
