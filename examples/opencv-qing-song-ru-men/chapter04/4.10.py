@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
 
-# 运行结果 https://is.gd/GBWvl2
+bgr_img = cv.imread('lesson2.jpg')
+hsv_img = cv.cvtColor(bgr_img, cv.COLOR_BGR2HSV)
+hue_img, sat_img, val_img = cv.split(hsv_img)
 
-bgr = cv.imread('lesson2.jpg')
-hsv = cv.cvtColor(bgr, cv.COLOR_BGR2HSV)
-hue, sat, val = cv.split(hsv)
-
-hue_mask = cv.inRange(hue, 5, 170)
-sat_mask = cv.inRange(sat, 25, 166)
+hue_mask = cv.inRange(hue_img, 5, 170)
+sat_mask = cv.inRange(sat_img, 25, 166)
 mask = hue_mask & sat_mask
-roi = cv.bitwise_and(bgr, bgr, mask=mask)
+roi_img = cv.bitwise_and(bgr_img, bgr_img, mask=mask)
 
-cv.imshow('bgr', bgr)
-cv.imshow('roi', roi)
+cv.imshow('bgr', bgr_img)
+cv.imshow('roi', roi_img)
 cv.waitKey()
 cv.destroyAllWindows()
+
+# 运行结果 https://is.gd/GBWvl2

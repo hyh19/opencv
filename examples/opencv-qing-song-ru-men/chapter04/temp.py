@@ -1,20 +1,15 @@
 import cv2 as cv
-import numpy as np
 
-bgr = cv.imread('opencv.jpg')
-hsv = cv.cvtColor(bgr, cv.COLOR_BGR2HSV)
-cv.imshow('bgr', bgr)
+bgr_img = cv.imread('lesson2.jpg')
+hsv_img = cv.cvtColor(bgr_img, cv.COLOR_BGR2HSV)
+hue_img, sat_img, val_img = cv.split(hsv_img)
 
-blue_range = (110, 130)
-green_range = (50, 70)
-red_range = (0, 30)
-color_range_list = [blue_range, green_range, red_range]
-color_name_list = ['blue', 'green', 'red']
-for color_range, color_name in zip(color_range_list, color_name_list):
-    lower, upper = color_range
-    mask = cv.inRange(hsv, (lower, 50, 50), (upper, 255, 255))
-    res = cv.bitwise_and(bgr, bgr, mask=mask)
-    cv.imshow(color_name, res)
+hue_mask = cv.inRange(hue_img, 5, 170)
+sat_mask = cv.inRange(sat_img, 25, 166)
+mask = hue_mask & sat_mask
+roi_img = cv.bitwise_and(bgr_img, bgr_img, mask=mask)
 
+cv.imshow('bgr', bgr_img)
+cv.imshow('roi', roi_img)
 cv.waitKey()
 cv.destroyAllWindows()
