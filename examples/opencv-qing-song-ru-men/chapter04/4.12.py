@@ -2,44 +2,44 @@
 import cv2 as cv
 import numpy as np
 
-bgr = np.random.randint(0, 256, size=[2, 3, 3], dtype=np.uint8)
-bgr_alpha_255 = cv.cvtColor(bgr, cv.COLOR_BGR2BGRA)
-print('bgr=\n', bgr)
-print('bgr_alpha_255=\n', bgr_alpha_255)
+bgr_img = np.random.randint(0, 256, size=(2, 3, 3), dtype=np.uint8)
+bgra_img = cv.cvtColor(bgr_img, cv.COLOR_BGR2BGRA)
+print(f'bgr = \n{bgr_img}')
+print(f'bgra = \n{bgra_img}')
 
-blue, green, red, alpha = cv.split(bgr_alpha_255)
-print('alpha=\n', alpha)
+blue_img, green_img, red_img, alpha_img = cv.split(bgra_img)
+print(f'alpha = \n{alpha_img}')
 
-alpha[:, :] = 125
-bgr_alpha_125 = cv.merge([blue, green, red, alpha])
-print('bgr_alpha_125=\n', bgr_alpha_125)
+alpha_img[:, :] = 125
+bgra_img = cv.merge([blue_img, green_img, red_img, alpha_img])
+print(f'bgra = \n{bgra_img}')
 
 '''
-bgr=
- [[[140 196 129]
-  [101 125  71]
-  [ 32 159 180]]
+bgr = 
+[[[ 83 186 155]
+  [  2  22 175]
+  [196 225 236]]
 
- [[212 231  21]
-  [250 174  87]
-  [187  49  54]]]
-bgr_alpha_255=
- [[[140 196 129 255]
-  [101 125  71 255]
-  [ 32 159 180 255]]
+ [[ 52 155  27]
+  [128  96 201]
+  [ 91  54 147]]]
+bgra = 
+[[[ 83 186 155 255]
+  [  2  22 175 255]
+  [196 225 236 255]]
 
- [[212 231  21 255]
-  [250 174  87 255]
-  [187  49  54 255]]]
-alpha=
- [[255 255 255]
+ [[ 52 155  27 255]
+  [128  96 201 255]
+  [ 91  54 147 255]]]
+alpha = 
+[[255 255 255]
  [255 255 255]]
-bgr_alpha_125=
- [[[140 196 129 125]
-  [101 125  71 125]
-  [ 32 159 180 125]]
+bgra = 
+[[[ 83 186 155 125]
+  [  2  22 175 125]
+  [196 225 236 125]]
 
- [[212 231  21 125]
-  [250 174  87 125]
-  [187  49  54 125]]]
+ [[ 52 155  27 125]
+  [128  96 201 125]
+  [ 91  54 147 125]]]
 '''

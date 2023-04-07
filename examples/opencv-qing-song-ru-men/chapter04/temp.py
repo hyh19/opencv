@@ -1,15 +1,14 @@
 import cv2 as cv
+import numpy as np
 
-bgr_img = cv.imread('lesson2.jpg')
-hsv_img = cv.cvtColor(bgr_img, cv.COLOR_BGR2HSV)
-hue_img, sat_img, val_img = cv.split(hsv_img)
+bgr_img = np.random.randint(0, 256, size=(2, 3, 3), dtype=np.uint8)
+bgra_img = cv.cvtColor(bgr_img, cv.COLOR_BGR2BGRA)
+print(f'bgr = \n{bgr_img}')
+print(f'bgra = \n{bgra_img}')
 
-hue_mask = cv.inRange(hue_img, 5, 170)
-sat_mask = cv.inRange(sat_img, 25, 166)
-mask = hue_mask & sat_mask
-roi_img = cv.bitwise_and(bgr_img, bgr_img, mask=mask)
+blue_img, green_img, red_img, alpha_img = cv.split(bgra_img)
+print(f'alpha = \n{alpha_img}')
 
-cv.imshow('bgr', bgr_img)
-cv.imshow('roi', roi_img)
-cv.waitKey()
-cv.destroyAllWindows()
+alpha_img[:, :] = 125
+bgra_img = cv.merge([blue_img, green_img, red_img, alpha_img])
+print(f'bgra = \n{bgra_img}')
