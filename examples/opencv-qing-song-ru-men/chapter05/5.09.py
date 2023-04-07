@@ -2,35 +2,34 @@
 import cv2 as cv
 import numpy as np
 
-img = np.random.randint(0, 256, size=[4, 5], dtype=np.uint8)
-rows, cols = img.shape
-map_row = np.zeros(img.shape, np.float32)
-map_col = np.ones(img.shape, np.float32) * 3
-res = cv.remap(img, map_col, map_row, cv.INTER_LINEAR)
-print('img=\n', img)
-print('map_row=\n', map_row)
-print('map_col=\n', map_col)
-print('res=\n', res)
+img = np.random.randint(0, 256, size=(4, 5), dtype=np.uint8)
+row_map = np.zeros(img.shape, np.float32)
+col_map = np.ones(img.shape, np.float32) * 3
+res = cv.remap(img, col_map, row_map, cv.INTER_LINEAR)
+print(f'img = \n{img}')
+print(f'row_map = \n{row_map}')
+print(f'col_map = \n{col_map}')
+print(f'res = \n{res}')
 
 '''
-img=
- [[ 37 191 172  16  23]
- [176 232 191  71 127]
- [136 147 194  51  50]
- [109  36   0 139 131]]
-map_row=
- [[0. 0. 0. 0. 0.]
+img = 
+[[ 68 110  83 202 183]
+ [ 96 224  46  70 214]
+ [167  58 165  72 141]
+ [ 37 168  95 144 168]]
+row_map = 
+[[0. 0. 0. 0. 0.]
  [0. 0. 0. 0. 0.]
  [0. 0. 0. 0. 0.]
  [0. 0. 0. 0. 0.]]
-map_col=
- [[3. 3. 3. 3. 3.]
+col_map = 
+[[3. 3. 3. 3. 3.]
  [3. 3. 3. 3. 3.]
  [3. 3. 3. 3. 3.]
  [3. 3. 3. 3. 3.]]
-res=
- [[16 16 16 16 16]
- [16 16 16 16 16]
- [16 16 16 16 16]
- [16 16 16 16 16]]
+res = 
+[[202 202 202 202 202]
+ [202 202 202 202 202]
+ [202 202 202 202 202]
+ [202 202 202 202 202]]
 '''

@@ -4,39 +4,39 @@ import numpy as np
 
 img = np.random.randint(0, 256, size=[4, 5], dtype=np.uint8)
 row_size, col_size = img.shape
-map_row = np.zeros(img.shape, np.float32)
-map_col = np.zeros(img.shape, np.float32)
+row_map = np.zeros(img.shape, np.float32)
+col_map = np.zeros(img.shape, np.float32)
 
 for row in range(row_size):
     for col in range(col_size):
-        map_row.itemset((row, col), row)
-        map_col.itemset((row, col), col)
+        row_map.itemset((row, col), row)
+        col_map.itemset((row, col), col)
 
-res = cv.remap(img, map_col, map_row, cv.INTER_LINEAR)
-print('img=\n', img)
-print('map_row=\n', map_row)
-print('map_col=\n', map_col)
-print('res=\n', res)
+res = cv.remap(img, col_map, row_map, cv.INTER_LINEAR)
+print(f'img = \n{img}')
+print(f'row_map = \n{row_map}')
+print(f'col_map = \n{col_map}')
+print(f'res = \n{res}')
 
 '''
-img=
- [[137  52 103 203  56]
- [ 15 122  61 183  97]
- [ 13  29 177 143 244]
- [115   9 245 254 237]]
-map_row=
- [[0. 0. 0. 0. 0.]
+img = 
+[[ 52  35  57 171 115]
+ [192 153 114 246 247]
+ [200 108 168 220 252]
+ [ 69 119 175 166 237]]
+row_map = 
+[[0. 0. 0. 0. 0.]
  [1. 1. 1. 1. 1.]
  [2. 2. 2. 2. 2.]
  [3. 3. 3. 3. 3.]]
-map_col=
- [[0. 1. 2. 3. 4.]
+col_map = 
+[[0. 1. 2. 3. 4.]
  [0. 1. 2. 3. 4.]
  [0. 1. 2. 3. 4.]
  [0. 1. 2. 3. 4.]]
-res=
- [[137  52 103 203  56]
- [ 15 122  61 183  97]
- [ 13  29 177 143 244]
- [115   9 245 254 237]]
+res = 
+[[ 52  35  57 171 115]
+ [192 153 114 246 247]
+ [200 108 168 220 252]
+ [ 69 119 175 166 237]]
 '''
