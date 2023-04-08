@@ -2,41 +2,41 @@
 import cv2 as cv
 import numpy as np
 
-img = np.random.randint(0, 256, size=[4, 6], dtype=np.uint8)
+img = np.random.randint(0, 256, size=(4, 6), dtype=np.uint8)
 row_size, col_size = img.shape
-map_row = np.zeros(img.shape, np.float32)
-map_col = np.zeros(img.shape, np.float32)
+row_map = np.zeros(img.shape, np.float32)
+col_map = np.zeros(img.shape, np.float32)
 
 for row in range(row_size):
     for col in range(col_size):
-        map_row.itemset((row, col), col)
-        map_col.itemset((row, col), row)
+        row_map.itemset((row, col), col)
+        col_map.itemset((row, col), row)
 
-res = cv.remap(img, map_col, map_row, cv.INTER_LINEAR)
-print('img=\n', img)
-print('map_row=\n', map_row)
-print('map_col=\n', map_col)
-print('res=\n', res)
+res = cv.remap(img, col_map, row_map, cv.INTER_LINEAR)
+print(f'img = \n{img}')
+print(f'row_map = \n{row_map}')
+print(f'col_map = \n{col_map}')
+print(f'res = \n{res}')
 
 '''
-img=
- [[229 148   7 231 250 169]
- [140 135 169 190 215 157]
- [ 64  48 177 107 193  61]
- [170 249 241 178   5  89]]
-map_row=
- [[0. 1. 2. 3. 4. 5.]
+img = 
+[[147 246  86 141 253  49]
+ [186 176 129 169 184 115]
+ [187  14  18 173 176  83]
+ [ 63 119 106 246   6 164]]
+row_map = 
+[[0. 1. 2. 3. 4. 5.]
  [0. 1. 2. 3. 4. 5.]
  [0. 1. 2. 3. 4. 5.]
  [0. 1. 2. 3. 4. 5.]]
-map_col=
- [[0. 0. 0. 0. 0. 0.]
+col_map = 
+[[0. 0. 0. 0. 0. 0.]
  [1. 1. 1. 1. 1. 1.]
  [2. 2. 2. 2. 2. 2.]
  [3. 3. 3. 3. 3. 3.]]
-res=
- [[229 140  64 170   0   0]
- [148 135  48 249   0   0]
- [  7 169 177 241   0   0]
- [231 190 107 178   0   0]]
+res = 
+[[147 186 187  63   0   0]
+ [246 176  14 119   0   0]
+ [ 86 129  18 106   0   0]
+ [141 169 173 246   0   0]]
 '''

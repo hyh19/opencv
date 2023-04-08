@@ -2,7 +2,7 @@
 import cv2 as cv
 import numpy as np
 
-img = np.random.randint(0, 256, size=[4, 5], dtype=np.uint8)
+img = np.random.randint(0, 256, size=(4, 5), dtype=np.uint8)
 row_size, col_size = img.shape
 row_map = np.zeros(img.shape, np.float32)
 col_map = np.zeros(img.shape, np.float32)
