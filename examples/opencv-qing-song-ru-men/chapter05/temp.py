@@ -8,8 +8,8 @@ col_map = np.zeros(img.shape[:2], np.float32)
 
 for row in range(row_size):
     for col in range(col_size):
-        row_map.itemset((row, col), row_size - 1 - row)
-        col_map.itemset((row, col), col)
+        row_map.itemset((row, col), row)
+        col_map.itemset((row, col), col_size - 1 - col)
 
 res = cv.remap(img, col_map, row_map, cv.INTER_LINEAR)
 cv.imshow('img', img)

@@ -4,39 +4,39 @@ import numpy as np
 
 img = np.random.randint(0, 256, size=[4, 5], dtype=np.uint8)
 row_size, col_size = img.shape
-map_row = np.zeros(img.shape, np.float32)
-map_col = np.zeros(img.shape, np.float32)
+row_map = np.zeros(img.shape, np.float32)
+col_map = np.zeros(img.shape, np.float32)
 
 for row in range(row_size):
     for col in range(col_size):
-        map_row.itemset((row, col), row_size - 1 - row)
-        map_col.itemset((row, col), col_size - 1 - col)
+        row_map.itemset((row, col), row_size - 1 - row)
+        col_map.itemset((row, col), col_size - 1 - col)
 
-res = cv.remap(img, map_col, map_row, cv.INTER_LINEAR)
-print('img=\n', img)
-print('map_row=\n', map_row)
-print('map_col=\n', map_col)
-print('res=\n', res)
+res = cv.remap(img, col_map, row_map, cv.INTER_LINEAR)
+print(f'img = \n{img}')
+print(f'row_map = \n{row_map}')
+print(f'col_map = \n{col_map}')
+print(f'res = \n{res}')
 
 '''
-img=
- [[ 93  25 151 106  32]
- [127 182  43 102  53]
- [121 102  30   4 130]
- [178 183 171 243  71]]
-map_row=
- [[3. 3. 3. 3. 3.]
+img = 
+[[169 133 166 166 203]
+ [ 13 239 146 242  28]
+ [241  61 132  99 179]
+ [ 42 151 252  26   0]]
+row_map = 
+[[3. 3. 3. 3. 3.]
  [2. 2. 2. 2. 2.]
  [1. 1. 1. 1. 1.]
  [0. 0. 0. 0. 0.]]
-map_col=
- [[4. 3. 2. 1. 0.]
+col_map = 
+[[4. 3. 2. 1. 0.]
  [4. 3. 2. 1. 0.]
  [4. 3. 2. 1. 0.]
  [4. 3. 2. 1. 0.]]
-res=
- [[ 71 243 171 183 178]
- [130   4  30 102 121]
- [ 53 102  43 182 127]
- [ 32 106 151  25  93]]
+res = 
+[[  0  26 252 151  42]
+ [179  99 132  61 241]
+ [ 28 242 146 239  13]
+ [203 166 166 133 169]]
 '''
