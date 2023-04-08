@@ -1,15 +1,14 @@
 import cv2 as cv
 import numpy as np
 
-# img = np.random.randint(0, 256, size=(4, 5), dtype=np.uint8)
-# thresh, res = cv.threshold(img, 127, 255, cv.THRESH_TRUNC)
-# print(f'img = \n{img}')
-# print(f'thresh = {thresh}')
-# print(f'res = \n{res}')
+gray_img = cv.imread('computer.jpg', cv.IMREAD_GRAYSCALE)
+_, thresh_img = cv.threshold(gray_img, 127, 255, cv.THRESH_BINARY)
+mean_img = cv.adaptiveThreshold(gray_img, 255, cv.ADAPTIVE_THRESH_MEAN_C, cv.THRESH_BINARY, 3, 5)
+gaussian_img = cv.adaptiveThreshold(gray_img, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY, 3, 5)
 
-img = cv.imread('lena.bmp')
-thresh, res = cv.threshold(img, 127, 255, cv.THRESH_TRUNC)
-cv.imshow('img', img)
-cv.imshow('res', res)
+cv.imshow('gray', gray_img)
+cv.imshow('thresh', thresh_img)
+cv.imshow('mean', mean_img)
+cv.imshow('gaussian', gaussian_img)
 cv.waitKey()
 cv.destroyAllWindows()
