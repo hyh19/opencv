@@ -3,14 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="48cac9f3-27ac-4169-980b-90a57f3f89c6" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.07.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.07.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.08.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.08.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.09.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.09.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.10.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.10.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.11.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.11.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.12.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.12.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.13.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.13.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/temp.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/temp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter07/7.01-blur.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter07/7.01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter07/7.02-blur.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter07/7.02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter07/7.03-boxFilter.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter07/7.03.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter07/7.04-boxFilter.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter07/7.04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter07/7.05-boxFilter.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter07/7.05.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter07/7.06-GaussianBlur.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter07/7.06.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter07/7.07-medianBlur.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter07/7.07.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +78,8 @@
       <workItem from="1680853513582" duration="2062000" />
       <workItem from="1680937909679" duration="2375000" />
       <workItem from="1680966255673" duration="1100000" />
-      <workItem from="1680967368037" duration="3482000" />
+      <workItem from="1680967368037" duration="4080000" />
+      <workItem from="1681032977919" duration="1239000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1680143894050</created>

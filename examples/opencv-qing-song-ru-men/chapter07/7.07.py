@@ -7,3 +7,5 @@ cv.imshow('img', img)
 cv.imshow('res', res)
 cv.waitKey()
 cv.destroyAllWindows()
+
+# 运行结果 https://is.gd/6pcpNR
