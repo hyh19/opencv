@@ -9,3 +9,5 @@ cv.imshow("canny1", canny_img1)
 cv.imshow("canny2", canny_img2)
 cv.waitKey()
 cv.destroyAllWindows()
+
+# 运行结果 https://is.gd/M8Br0O
