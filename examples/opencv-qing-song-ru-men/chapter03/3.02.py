@@ -5,21 +5,21 @@ import cv2 as cv
 img1 = np.random.randint(0, 256, size=(3, 3), dtype=np.uint8)
 img2 = np.random.randint(0, 256, size=(3, 3), dtype=np.uint8)
 img3 = cv.add(img1, img2)
-print('img1=\n', img1)
-print('img2=\n', img2)
-print('cv.add(img1,img2)=\n', img3)
+print(f'img1 = \n{img1}')
+print(f'img2 = \n{img2}')
+print(f'cv.add(img1,img2) = \n{img3}')
 
 '''
-img1=
- [[ 27 247  83]
- [221 124 157]
- [100 160 241]]
-img2=
- [[204 248 226]
- [196 166 104]
- [ 31  75 203]]
-cv.add(img1,img2)=
- [[231 255 255]
- [255 255 255]
- [131 235 255]]
+img1 = 
+[[187 239  64]
+ [105 173  45]
+ [157 255   2]]
+img2 = 
+[[225  98 149]
+ [248 188  56]
+ [207 133 233]]
+cv.add(img1,img2) = 
+[[255 255 213]
+ [255 255 101]
+ [255 255 235]]
 '''

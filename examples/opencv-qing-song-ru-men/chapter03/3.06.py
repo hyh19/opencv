@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
 
-# 运行结果 https://is.gd/ycuVnN
-
-lena = cv.imread('lena512.bmp', cv.IMREAD_UNCHANGED)
-dollar = cv.imread('dollar.bmp', cv.IMREAD_UNCHANGED)
+lena = cv.imread('lena512.bmp')
+dollar = cv.imread('dollar.bmp')
 cv.imshow('lena', lena)
 cv.imshow('dollar', dollar)
 
@@ -22,3 +20,5 @@ dollar[160:340, 200:300] = blended_face
 cv.imshow('result', dollar)
 cv.waitKey()
 cv.destroyAllWindows()
+
+# 运行结果 https://is.gd/ycuVnN

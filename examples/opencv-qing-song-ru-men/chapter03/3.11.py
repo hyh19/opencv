@@ -2,8 +2,6 @@
 import cv2 as cv
 import numpy as np
 
-# 运行结果 https://is.gd/L4BoVF
-
 img = cv.imread('lena.bmp')
 rows, cols = img.shape[:2]
 mask = np.zeros((rows, cols), dtype=np.uint8)
@@ -15,3 +13,5 @@ cv.imshow('mask', mask)
 cv.imshow('result', result)
 cv.waitKey()
 cv.destroyAllWindows()
+
+# 运行结果 https://is.gd/L4BoVF
