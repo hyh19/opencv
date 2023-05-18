@@ -2,8 +2,6 @@
 import cv2 as cv
 import numpy as np
 
-# 运行结果 https://is.gd/meSEIZ
-
 gray = cv.imread('lena.bmp', cv.IMREAD_GRAYSCALE)
 key = np.random.randint(0, 256, size=gray.shape, dtype=np.uint8)
 
@@ -16,3 +14,5 @@ cv.imshow('encryption', encryption)
 cv.imshow('decryption', decryption)
 cv.waitKey()
 cv.destroyAllWindows()
+
+# 运行结果 https://is.gd/meSEIZ
