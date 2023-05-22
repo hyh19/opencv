@@ -7,13 +7,13 @@ img[0:6, 0:6] = 123
 img[2:6, 2:6] = 126
 print(f'img = \n{img}')
 
-thresh1, thresh_img = cv.threshold(img, 127, 255, cv.THRESH_BINARY)
+thresh1, img_thresh = cv.threshold(img, 127, 255, cv.THRESH_BINARY)
 print(f'thresh1 = {thresh1}')
-print(f'thresh_img = \n{thresh_img}')
+print(f'img_thresh = \n{img_thresh}')
 
-thresh2, otsu_img = cv.threshold(img, 0, 255, cv.THRESH_OTSU)
+thresh2, img_otsu = cv.threshold(img, 0, 255, cv.THRESH_OTSU)
 print(f'thresh2 = {thresh2}')
-print(f'otsu_img = \n{otsu_img}')
+print(f'img_otsu = \n{img_otsu}')
 
 '''
 img = 
@@ -23,14 +23,14 @@ img =
  [123 123 126 126 126]
  [123 123 126 126 126]]
 thresh1 = 127.0
-thresh_img = 
+img_thresh = 
 [[0 0 0 0 0]
  [0 0 0 0 0]
  [0 0 0 0 0]
  [0 0 0 0 0]
  [0 0 0 0 0]]
 thresh2 = 123.0
-otsu_img = 
+img_otsu = 
 [[  0   0   0   0   0]
  [  0   0   0   0   0]
  [  0   0 255 255 255]

@@ -2,14 +2,14 @@
 import cv2 as cv
 
 img = cv.imread('tiffany.bmp')
-gray_img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
-thresh1, thresh_img = cv.threshold(gray_img, 127, 255, cv.THRESH_BINARY)
-thresh2, otsu_img = cv.threshold(gray_img, 0, 255, cv.THRESH_OTSU)
+img_gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+_, img_thresh = cv.threshold(img_gray, 127, 255, cv.THRESH_BINARY)
+thresh2, img_otsu = cv.threshold(img_gray, 0, 255, cv.THRESH_OTSU)
 
 cv.imshow('img', img)
-cv.imshow('gray', gray_img)
-cv.imshow('thresh', thresh_img)
-cv.imshow('otus', otsu_img)
+cv.imshow('gray', img_gray)
+cv.imshow('thresh', img_thresh)
+cv.imshow('otus', img_otsu)
 cv.waitKey()
 cv.destroyAllWindows()
 
