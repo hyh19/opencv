@@ -2,14 +2,14 @@
 import cv2 as cv
 
 img = cv.imread('lena.bmp')
-flip_x = cv.flip(img, 0)
-flip_y = cv.flip(img, 1)
-flip_xy = cv.flip(img, -1)
+flip_row = cv.flip(img, 0)
+flip_col = cv.flip(img, 1)
+flip_row_col = cv.flip(img, -1)
 cv.imshow('img', img)
-cv.imshow('flip_x', flip_x)
-cv.imshow('flip_y', flip_y)
-cv.imshow('flip_xy', flip_xy)
+cv.imshow('flip_row', flip_row)
+cv.imshow('flip_col', flip_col)
+cv.imshow('flip_row_col', flip_row_col)
 cv.waitKey()
 cv.destroyAllWindows()
 
-# 运行结果 https://is.gd/g2usqj
+# 运行结果 https://is.gd/cwi944

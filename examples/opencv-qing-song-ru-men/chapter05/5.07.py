@@ -3,20 +3,21 @@ import cv2 as cv
 import numpy as np
 
 img = cv.imread('lena.bmp')
-ySize, xSize = img.shape[:2]
+rows, cols = img.shape[:2]
+width, height = cols, rows
 
-p1 = [0, 0]
-p2 = [xSize - 1, 0]
-p3 = [0, ySize - 1]
+p1 = (0, 0)
+p2 = (width - 1, 0)
+p3 = (0, height - 1)
 pts1 = np.float32([p1, p2, p3])
 
-q1 = [0, ySize * 0.33]
-q2 = [xSize * 0.85, ySize * 0.25]
-q3 = [xSize * 0.15, ySize * 0.7]
+q1 = (0, height * 0.33)
+q2 = (width * 0.85, height * 0.25)
+q3 = (width * 0.15, height * 0.7)
 pts2 = np.float32([q1, q2, q3])
 
 M = cv.getAffineTransform(pts1, pts2)
-res = cv.warpAffine(img, M, (xSize, ySize))
+res = cv.warpAffine(img, M, (width, height))
 
 pts1 = pts1.astype(np.int32)
 pts2 = pts2.astype(np.int32)

@@ -4,18 +4,18 @@ import numpy as np
 
 img = np.random.randint(0, 256, size=(4, 5), dtype=np.uint8)
 row_size, col_size = img.shape
-row_map = np.zeros(img.shape, np.float32)
-col_map = np.zeros(img.shape, np.float32)
+map_row = np.zeros(img.shape, np.float32)
+map_col = np.zeros(img.shape, np.float32)
 
 for row in range(row_size):
     for col in range(col_size):
-        row_map.itemset((row, col), row_size - 1 - row)
-        col_map.itemset((row, col), col_size - 1 - col)
+        map_row.itemset((row, col), row_size - 1 - row)
+        map_col.itemset((row, col), col_size - 1 - col)
 
-res = cv.remap(img, col_map, row_map, cv.INTER_LINEAR)
+res = cv.remap(img, map_col, map_row, cv.INTER_LINEAR)
 print(f'img = \n{img}')
-print(f'row_map = \n{row_map}')
-print(f'col_map = \n{col_map}')
+print(f'map_row = \n{map_row}')
+print(f'map_col = \n{map_col}')
 print(f'res = \n{res}')
 
 '''
@@ -24,12 +24,12 @@ img =
  [ 13 239 146 242  28]
  [241  61 132  99 179]
  [ 42 151 252  26   0]]
-row_map = 
+map_row = 
 [[3. 3. 3. 3. 3.]
  [2. 2. 2. 2. 2.]
  [1. 1. 1. 1. 1.]
  [0. 0. 0. 0. 0.]]
-col_map = 
+map_col = 
 [[4. 3. 2. 1. 0.]
  [4. 3. 2. 1. 0.]
  [4. 3. 2. 1. 0.]

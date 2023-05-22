@@ -3,10 +3,11 @@ import cv2 as cv
 import numpy as np
 
 img = cv.imread('lena.bmp')
-ySize, xSize = img.shape[:2]
-xMove, yMove = 100, 200
-M = np.float32([[1, 0, xMove], [0, 1, yMove]])
-res = cv.warpAffine(img, M, (xSize, ySize))
+move_x, move_y = 100, 200
+M = np.float32([[1, 0, move_x], [0, 1, move_y]])
+rows, cols = img.shape[:2]
+width, height = cols, rows
+res = cv.warpAffine(img, M, (width, height))
 cv.imshow('img', img)
 cv.imshow('res', res)
 cv.waitKey()
