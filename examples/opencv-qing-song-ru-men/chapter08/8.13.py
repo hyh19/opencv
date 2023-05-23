@@ -3,21 +3,20 @@ import cv2 as cv
 
 img = cv.imread('kernel.bmp')
 
-rect_kernel = cv.getStructuringElement(cv.MORPH_RECT, (59, 59))
-cross_kernel = cv.getStructuringElement(cv.MORPH_CROSS, (59, 59))
-ellipse_kernel = cv.getStructuringElement(cv.MORPH_ELLIPSE, (59, 59))
+kernel_rect = cv.getStructuringElement(cv.MORPH_RECT, (59, 59))
+kernel_cross = cv.getStructuringElement(cv.MORPH_CROSS, (59, 59))
+kernel_ellipse = cv.getStructuringElement(cv.MORPH_ELLIPSE, (59, 59))
 
-rect_dilate_img = cv.dilate(img, rect_kernel)
-cross_dilate_img = cv.dilate(img, cross_kernel)
-ellipse_dilate_img = cv.dilate(img, ellipse_kernel)
+img_rect = cv.dilate(img, kernel_rect)
+img_cross = cv.dilate(img, kernel_cross)
+img_ellipse = cv.dilate(img, kernel_ellipse)
 
 cv.imshow('img', img)
-cv.imshow('rect_dilate', rect_dilate_img)
-cv.imshow('cross_dilate', cross_dilate_img)
-cv.imshow('ellipse_dilate', ellipse_dilate_img)
+cv.imshow('rect', img_rect)
+cv.imshow('cross', img_cross)
+cv.imshow('ellipse', img_ellipse)
 
 cv.waitKey()
 cv.destroyAllWindows()
 
-# 修改标题
-# 运行结果 https://bit.ly/3z1D0rc
+# 运行结果 https://is.gd/xtmpwt

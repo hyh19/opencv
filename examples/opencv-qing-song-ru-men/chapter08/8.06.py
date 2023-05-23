@@ -4,9 +4,9 @@ import numpy as np
 
 img = cv.imread('dilation.bmp', cv.IMREAD_UNCHANGED)
 kernel = np.ones((5, 5), np.uint8)
-dilate_img = cv.dilate(img, kernel, iterations=9)
+img_dilate = cv.dilate(img, kernel, iterations=9)
 cv.imshow('img', img)
-cv.imshow('dilate', dilate_img)
+cv.imshow('dilate', img_dilate)
 cv.waitKey()
 cv.destroyAllWindows()
 

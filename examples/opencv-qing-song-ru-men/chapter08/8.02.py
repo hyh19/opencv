@@ -4,8 +4,10 @@ import numpy as np
 
 img = cv.imread('erode.bmp')
 kernel = np.ones((5, 5), np.uint8)
-erode_img = cv.erode(img, kernel)
+img_erode = cv.erode(img, kernel)
 cv.imshow('img', img)
-cv.imshow('erode', erode_img)
+cv.imshow('erode', img_erode)
 cv.waitKey()
 cv.destroyAllWindows()
+
+# 运行结果 https://is.gd/k8JZrI

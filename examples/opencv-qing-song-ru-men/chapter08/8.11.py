@@ -6,13 +6,13 @@ img1 = cv.imread('blackhat.bmp')
 img2 = cv.imread('lena.bmp')
 
 kernel = np.ones((5, 5), np.uint8)
-blackhat_img1 = cv.morphologyEx(img1, cv.MORPH_BLACKHAT, kernel)
-blackhat_img2 = cv.morphologyEx(img2, cv.MORPH_BLACKHAT, kernel)
+img1_blackhat = cv.morphologyEx(img1, cv.MORPH_BLACKHAT, kernel)
+img2_blackhat = cv.morphologyEx(img2, cv.MORPH_BLACKHAT, kernel)
 
 cv.imshow('img1', img1)
-cv.imshow('blackhat1', blackhat_img1)
+cv.imshow('blackhat1', img1_blackhat)
 cv.imshow('img2', img2)
-cv.imshow('blackhat2', blackhat_img2)
+cv.imshow('blackhat2', img2_blackhat)
 
 cv.waitKey()
 cv.destroyAllWindows()

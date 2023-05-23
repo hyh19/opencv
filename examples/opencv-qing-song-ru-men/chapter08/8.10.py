@@ -6,13 +6,13 @@ img1 = cv.imread('tophat.bmp')
 img2 = cv.imread('lena.bmp')
 
 kernel = np.ones((5, 5), np.uint8)
-tophat_img1 = cv.morphologyEx(img1, cv.MORPH_TOPHAT, kernel)
-tophat_img2 = cv.morphologyEx(img2, cv.MORPH_TOPHAT, kernel)
+img1_tophat = cv.morphologyEx(img1, cv.MORPH_TOPHAT, kernel)
+img2_tophat = cv.morphologyEx(img2, cv.MORPH_TOPHAT, kernel)
 
 cv.imshow('img1', img1)
-cv.imshow('tophat1', tophat_img1)
+cv.imshow('tophat1', img1_tophat)
 cv.imshow('img2', img2)
-cv.imshow('tophat2', tophat_img2)
+cv.imshow('tophat2', img2_tophat)
 
 cv.waitKey()
 cv.destroyAllWindows()

@@ -4,9 +4,9 @@ import numpy as np
 
 img = cv.imread('gradient.bmp')
 kernel = np.ones((5, 5), np.uint8)
-gradient_img = cv.morphologyEx(img, cv.MORPH_GRADIENT, kernel)
+img_gradient = cv.morphologyEx(img, cv.MORPH_GRADIENT, kernel)
 cv.imshow('img', img)
-cv.imshow('gradient', gradient_img)
+cv.imshow('gradient', img_gradient)
 cv.waitKey()
 cv.destroyAllWindows()
 

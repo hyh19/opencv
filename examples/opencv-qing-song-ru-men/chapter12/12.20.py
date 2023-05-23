@@ -2,9 +2,9 @@
 import cv2 as cv
 
 img = cv.imread('contours.bmp')
-gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
-_, binary = cv.threshold(gray, 127, 255, cv.THRESH_BINARY)
-_, contours, hierarchy = cv.findContours(binary, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
+img_gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+_, img_binary = cv.threshold(img_gray, 127, 255, cv.THRESH_BINARY)
+_, contours, hierarchy = cv.findContours(img_binary, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
 hull1 = cv.convexHull(contours[0])
 print(f'returnPoints = True: \n{hull1}')
 hull2 = cv.convexHull(contours[0], returnPoints=False)

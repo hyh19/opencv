@@ -6,13 +6,13 @@ img1 = cv.imread('closing.bmp')
 img2 = cv.imread('closing2.bmp')
 
 kernel = np.ones((10, 10), np.uint8)
-close_img1 = cv.morphologyEx(img1, cv.MORPH_CLOSE, kernel, iterations=3)
-close_img2 = cv.morphologyEx(img2, cv.MORPH_CLOSE, kernel, iterations=3)
+img1_close = cv.morphologyEx(img1, cv.MORPH_CLOSE, kernel, iterations=3)
+img2_close = cv.morphologyEx(img2, cv.MORPH_CLOSE, kernel, iterations=3)
 
 cv.imshow('img1', img1)
-cv.imshow('close1', close_img1)
+cv.imshow('close1', img1_close)
 cv.imshow('img2', img2)
-cv.imshow('close2', close_img2)
+cv.imshow('close2', img2_close)
 
 cv.waitKey()
 cv.destroyAllWindows()

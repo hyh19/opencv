@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
 
-gray_img = cv.imread('scharr.bmp', cv.IMREAD_GRAYSCALE)
-scharr_y_img = cv.Scharr(gray_img, cv.CV_64F, 0, 1)
-scharr_y_img = cv.convertScaleAbs(scharr_y_img)
-cv.imshow('gray', gray_img)
-cv.imshow('scharr_y', scharr_y_img)
+img_gray = cv.imread('scharr.bmp', cv.IMREAD_GRAYSCALE)
+img_scharr_y = cv.Scharr(img_gray, cv.CV_64F, 0, 1)
+img_scharr_y = cv.convertScaleAbs(img_scharr_y)
+cv.imshow('gray', img_gray)
+cv.imshow('scharr_y', img_scharr_y)
 cv.waitKey()
 cv.destroyAllWindows()
+
+# 运行结果 https://is.gd/UCBDDX
