@@ -1,16 +1,14 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
 
-# 运行结果 https://is.gd/DLY55L
-
 img = cv.imread('cs.bmp')
-gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
-_, binary = cv.threshold(gray, 127, 255, cv.THRESH_BINARY)
-_, contours, hierarchy = cv.findContours(binary, cv.RETR_LIST, cv.CHAIN_APPROX_SIMPLE)
+img_gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+_, img_binary = cv.threshold(img_gray, 127, 255, cv.THRESH_BINARY)
+_, contours, hierarchy = cv.findContours(img_binary, cv.RETR_LIST, cv.CHAIN_APPROX_SIMPLE)
 
 # 凸包
 green = (0, 255, 0)
-# 点
+# 顶点
 red = (0, 0, 255)
 # 文字
 blue = (255, 0, 0)
@@ -18,30 +16,17 @@ blue = (255, 0, 0)
 hull = cv.convexHull(contours[0])
 cv.polylines(img, [hull], True, green, 2)
 
-ptA = (300, 150)
-distA = cv.pointPolygonTest(hull, ptA, True)
-font = cv.FONT_HERSHEY_SIMPLEX
-cv.putText(img, 'A', ptA, font, 1, blue, 2)
-cv.circle(img, ptA, 5, red, -1)
-print(f'distA = {distA}')
-
-ptB = (300, 250)
-distB = cv.pointPolygonTest(hull, ptB, True)
-font = cv.FONT_HERSHEY_SIMPLEX
-cv.putText(img, 'B', ptB, font, 1, blue, 2)
-cv.circle(img, ptB, 5, red, -1)
-print(f'distB = {distB}')
-
-ptC = (423, 112)
-distC = cv.pointPolygonTest(hull, ptC, True)
-font = cv.FONT_HERSHEY_SIMPLEX
-cv.putText(img, 'C', ptC, font, 1, blue, 2)
-cv.circle(img, ptC, 5, red, -1)
-print(f'distC = {distC}')
+for point, point_name in zip([(300, 150), (300, 250), (423, 112)], ['A', 'B', 'C']):
+    dist = cv.pointPolygonTest(hull, point, True)
+    cv.putText(img, point_name, point, cv.FONT_HERSHEY_SIMPLEX, 1, blue, 2)
+    cv.circle(img, point, 5, red, -1)
+    print(f'dist{point_name} = {dist}')
 
 cv.imshow("result", img)
 cv.waitKey()
 cv.destroyAllWindows()
+
+# 运行结果 https://is.gd/DLY55L
 
 '''
 distA = 16.891650862259112
