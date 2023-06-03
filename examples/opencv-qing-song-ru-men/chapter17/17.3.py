@@ -3,34 +3,34 @@ import numpy as np
 import cv2 as cv
 import matplotlib.pyplot as plt
 
-# 运行结果 https://is.gd/3ttvnz
-
 img = cv.imread('water_coins.jpg')
 cv.imshow('img', img)
 
-gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
-cv.imshow('gray', gray)
+img_gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+cv.imshow('gray', img_gray)
 
-_, binary_inv = cv.threshold(gray, 0, 255, cv.THRESH_BINARY_INV + cv.THRESH_OTSU)
-cv.imshow('binary_inv', binary_inv)
+_, img_binary_inv = cv.threshold(img_gray, 0, 255, cv.THRESH_BINARY_INV + cv.THRESH_OTSU)
+cv.imshow('binary_inv', img_binary_inv)
 
 kernel = np.ones((3, 3), np.uint8)
-open1 = cv.morphologyEx(binary_inv, cv.MORPH_OPEN, kernel, iterations=2)
-cv.imshow('open', open1)
+img_open = cv.morphologyEx(img_binary_inv, cv.MORPH_OPEN, kernel, iterations=2)
+cv.imshow('open', img_open)
 
-dilate = cv.dilate(open1, kernel, iterations=3)
-cv.imshow('dilate', dilate)
+img_dilate = cv.dilate(img_open, kernel, iterations=3)
+cv.imshow('dilate', img_dilate)
 
-dist = cv.distanceTransform(open1, cv.DIST_L2, 5)
-plt.imshow(dist, cmap='gray')
+img_dist = cv.distanceTransform(img_open, cv.DIST_L2, 5)
+plt.imshow(img_dist, cmap='gray')
 plt.show()
 
-_, fg = cv.threshold(dist, 0.7 * dist.max(), 255, cv.THRESH_BINARY)
-cv.imshow('fg', fg)
+_, img_fg = cv.threshold(img_dist, 0.7 * img_dist.max(), 255, cv.THRESH_BINARY)
+cv.imshow('fg', img_fg)
 
-fg = np.uint8(fg)
-unknown = cv.subtract(dilate, fg)
-cv.imshow('unknown', unknown)
+img_fg = np.uint8(img_fg)
+img_unknown = cv.subtract(img_dilate, img_fg)
+cv.imshow('unknown', img_unknown)
 
 cv.waitKey()
 cv.destroyAllWindows()
+
+# 运行结果 https://is.gd/3ttvnz
