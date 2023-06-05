@@ -26,4 +26,4 @@ scores = predictions[0][indexes]
 for i in range(top_n):
     class_index = indexes[i]
     class_name = class_names[class_index]
-    print('Top {} [class: {}], [line: {}], [score: {}]'.format(i + 1, class_name, class_index + 1, scores[i]))
+    print(f'Top {i + 1} [class: {class_name}], [line: {class_index + 1}], [score: {scores[i]}]')
