@@ -1,39 +1,37 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 import numpy as np
-
-# 运行结果 https://is.gd/VoIj1q
 
 size = 400
 img = np.ones((size, size, 3), np.uint8) * 255
 win_name = 'win'
-trackbar_name = 'Fill'
-thickness = -1
+trackbar_fill = 'Fill'
+thickness = 2
 
 
-def fill(pos):
-    pass
+def change_thickness(pos):
+    global thickness
+    thickness = -1 if cv.getTrackbarPos(trackbar_fill, win_name) == 1 else 2
 
 
 def draw(event, x, y, flags, param):
-    if event == cv2.EVENT_LBUTTONDOWN:
-        px = np.random.randint(1, size - 50)
-        py = np.random.randint(1, size - 50)
+    if event == cv.EVENT_LBUTTONDOWN:
+        x1 = np.random.randint(1, size - 50)
+        y1 = np.random.randint(1, size - 50)
         color = np.random.randint(0, high=256, size=(3,)).tolist()
-        cv2.rectangle(img, (x, y), (px, py), color, thickness)
+        cv.rectangle(img, (x, y), (x1, y1), color, thickness)
+        cv.imshow(win_name, img)
 
 
-cv2.namedWindow(win_name)
-cv2.setMouseCallback(win_name, draw)
-cv2.createTrackbar(trackbar_name, win_name, 0, 1, fill)
+cv.namedWindow(win_name)
+cv.setMouseCallback(win_name, draw)
+cv.createTrackbar(trackbar_fill, win_name, 0, 1, change_thickness)
+
 while True:
-    cv2.imshow(win_name, img)
-    mode = cv2.getTrackbarPos(trackbar_name, win_name)
-    if mode == 0:
-        thickness = 2
-    else:
-        thickness = -1
-    k = cv2.waitKey(1) & 0xFF
+    cv.imshow(win_name, img)
+    k = cv.waitKey(1) & 0xFF
     if k == 27:
         break
-cv2.destroyAllWindows()
+cv.destroyAllWindows()
+
+# 运行结果 https://is.gd/VoIj1q

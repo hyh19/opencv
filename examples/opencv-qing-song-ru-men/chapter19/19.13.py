@@ -1,35 +1,22 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
-img = cv2.imread("lena512.bmp", cv2.IMREAD_GRAYSCALE)
+img_gray = cv.imread("lena512.bmp", cv.IMREAD_GRAYSCALE)
 win_name = "win"
-trackbar_type = "Type"
-trackbar_value = "Value"
-threshold_type = 0
-threshold_value = 127
+trackbar_type = "Threshold Type"
+trackbar_value = "Threshold Value"
 
 
-def on_change_type(pos):
-    global threshold_type
-    global threshold_value
-    threshold_type = cv2.getTrackbarPos(trackbar_type, win_name)
-    threshold_value = cv2.getTrackbarPos(trackbar_value, win_name)
-    _, result = cv2.threshold(img, threshold_value, 255, threshold_type)
-    cv2.imshow(win_name, result)
+def change_thresh(pos):
+    threshold_type = cv.getTrackbarPos(trackbar_type, win_name)
+    threshold_value = cv.getTrackbarPos(trackbar_value, win_name)
+    _, img_thresh = cv.threshold(img_gray, threshold_value, 255, threshold_type)
+    cv.imshow(win_name, img_thresh)
 
 
-def on_change_value(pos):
-    global threshold_type
-    global threshold_value
-    threshold_type = cv2.getTrackbarPos(trackbar_type, win_name)
-    threshold_value = cv2.getTrackbarPos(trackbar_value, win_name)
-    _, result = cv2.threshold(img, threshold_value, 255, threshold_type)
-    cv2.imshow(win_name, result)
-
-
-cv2.namedWindow(win_name, cv2.WINDOW_NORMAL)
-cv2.imshow(win_name, img)
-cv2.createTrackbar(trackbar_type, win_name, threshold_type, 4, on_change_type)
-cv2.createTrackbar(trackbar_value, win_name, threshold_value, 255, on_change_value)
-if cv2.waitKey() == 27:
-    cv2.destroyAllWindows()
+cv.namedWindow(win_name, cv.WINDOW_NORMAL)
+cv.imshow(win_name, img_gray)
+cv.createTrackbar(trackbar_type, win_name, 0, 4, change_thresh)
+cv.createTrackbar(trackbar_value, win_name, 127, 255, change_thresh)
+if cv.waitKey() == 27:
+    cv.destroyAllWindows()
