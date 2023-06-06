@@ -1,52 +1,59 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 import numpy as np
 
-# 运行结果 https://is.gd/raF6Sw
+RECTANGLE = 1
+CIRCLE = 2
+LINE = 3
+ELLIPSE = 4
+TEXT = 5
 
+mode = RECTANGLE
 size = 400
-mode = 1
 thickness = -1
 
 
 def draw(event, x, y, flags, param):
-    if event == cv2.EVENT_LBUTTONDOWN:
-        radius = np.random.randint(1, size / 5)
-        angle = np.random.randint(0, 361)
+    if event == cv.EVENT_LBUTTONDOWN:
+        point = np.random.randint(1, high=size - 50, size=(2,)).tolist()
         color = np.random.randint(0, high=256, size=(3,)).tolist()
-        a = np.random.randint(1, size - 50)
-        if mode == 1:
-            cv2.rectangle(img, (x, y), (a, a), color, thickness)
-        elif mode == 2:
-            cv2.circle(img, (x, y), radius, color, thickness)
-        elif mode == 3:
-            cv2.line(img, (a, a), (x, y), color, 3)
-        elif mode == 4:
-            cv2.ellipse(img, (x, y), (100, 150), angle, 0, 360, color, thickness)
-        elif mode == 5:
-            cv2.putText(img, 'OpenCV', (0, round(size / 2)), cv2.FONT_HERSHEY_SIMPLEX, 2, color, 5)
+        if mode == RECTANGLE:
+            cv.rectangle(img, (x, y), point, color, thickness)
+        elif mode == CIRCLE:
+            radius = np.random.randint(1, size / 5)
+            cv.circle(img, (x, y), radius, color, thickness)
+        elif mode == LINE:
+            cv.line(img, point, (x, y), color, 3)
+        elif mode == ELLIPSE:
+            angle = np.random.randint(0, 361)
+            cv.ellipse(img, (x, y), (100, 150), angle, 0, 360, color, thickness)
+        elif mode == TEXT:
+            cv.putText(img, 'OpenCV', (0, round(size / 2)), cv.FONT_HERSHEY_SIMPLEX, 2, color, 5)
 
 
 img = np.ones((size, size, 3), np.uint8) * 255
-cv2.namedWindow('win')
-cv2.setMouseCallback('win', draw)
+win_name = 'win'
+cv.namedWindow(win_name)
+cv.setMouseCallback(win_name, draw)
 while True:
-    cv2.imshow('win', img)
-    k = cv2.waitKey(1) & 0xFF
+    cv.imshow(win_name, img)
+    k = cv.waitKey(1) & 0xFF
     if k == ord('r'):
-        mode = 1
+        mode = RECTANGLE
     elif k == ord('c'):
-        mode = 2
+        mode = CIRCLE
     elif k == ord('l'):
-        mode = 3
+        mode = LINE
     elif k == ord('e'):
-        mode = 4
+        mode = ELLIPSE
     elif k == ord('t'):
-        mode = 5
+        mode = TEXT
     elif k == ord('f'):
         thickness = -1
     elif k == ord('u'):
         thickness = 3
     elif k == 27:
         break
-cv2.destroyAllWindows()
+cv.destroyAllWindows()
+
+# 运行结果 https://is.gd/raF6Sw

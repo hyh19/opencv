@@ -1,25 +1,26 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 import numpy as np
-
-# 运行结果 https://is.gd/A4GFTB
 
 size = 400
 
 
 def draw(event, x, y, flags, param):
-    if event == cv2.EVENT_LBUTTONDOWN:
-        px = np.random.randint(1, size - 50)
-        py = np.random.randint(1, size - 50)
+    if event == cv.EVENT_LBUTTONDOWN:
+        x1 = np.random.randint(1, size - 50)
+        y1 = np.random.randint(1, size - 50)
         color = np.random.randint(0, high=256, size=(3,)).tolist()
-        cv2.rectangle(img, (x, y), (px, py), color, 2)
+        cv.rectangle(img, (x, y), (x1, y1), color, 2)
 
 
 img = np.ones((size, size, 3), dtype="uint8") * 255
-cv2.namedWindow('win')
-cv2.setMouseCallback('win', draw)
+win_name = 'win'
+cv.namedWindow(win_name)
+cv.setMouseCallback(win_name, draw)
 while True:
-    cv2.imshow('win', img)
-    if cv2.waitKey(20) == 27:
+    cv.imshow(win_name, img)
+    if cv.waitKey(20) == 27:
         break
-cv2.destroyAllWindows()
+cv.destroyAllWindows()
+
+# 运行结果 https://is.gd/A4GFTB
