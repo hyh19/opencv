@@ -16,4 +16,4 @@ predict_image = cv.imread("fTest.png", cv.IMREAD_GRAYSCALE)
 label, confidence = recognizer.predict(predict_image)
 
 # 输出预测结果
-print(f"label={label}, confidence={confidence}")
+print(f"label = {label}, confidence = {confidence}")

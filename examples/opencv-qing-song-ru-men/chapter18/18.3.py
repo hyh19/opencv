@@ -1,17 +1,18 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 
-cap = cv2.VideoCapture(0)
-fourcc = cv2.VideoWriter_fourcc(*'XVID')
-out = cv2.VideoWriter('output.avi', fourcc, 20, (1280, 720))
+cap = cv.VideoCapture(0)
+fourcc = cv.VideoWriter_fourcc(*'XVID')
+# 注意：frameSize 要和摄像头分辨率一致
+out = cv.VideoWriter('out.avi', fourcc, 20, (1280, 720))
 while cap.isOpened():
     ret, frame = cap.read()
     if not ret:
         break
     out.write(frame)
-    cv2.imshow('frame', frame)
-    if cv2.waitKey(1) == 27:
+    cv.imshow('frame', frame)
+    if cv.waitKey(1) == 27:
         break
 cap.release()
 out.release()
-cv2.destroyAllWindows()
+cv.destroyAllWindows()

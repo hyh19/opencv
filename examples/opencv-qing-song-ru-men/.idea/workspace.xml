@@ -2,8 +2,730 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48cac9f3-27ac-4169-980b-90a57f3f89c6" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/../opencv-imooc496/ch12/12-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../opencv-imooc496/ch12/12-2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter18/18.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/18.1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter18/18.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/18.2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter18/18.3.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/18.3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter18/18.4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/18.4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/digits.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/digits2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/home.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/0/0-1.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/0/0-10.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/0/0-2.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/0/0-3.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/0/0-4.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/0/0-5.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/0/0-6.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/0/0-7.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/0/0-8.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/0/0-9.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/1/1-1.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/1/1-10.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/1/1-2.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/1/1-3.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/1/1-4.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/1/1-5.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/1/1-6.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/1/1-7.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/1/1-8.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/1/1-9.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/2/2-1.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/2/2-10.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/2/2-2.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/2/2-3.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/2/2-4.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/2/2-5.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/2/2-6.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/2/2-7.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/2/2-8.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/2/2-9.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/3/3-1.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/3/3-10.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/3/3-2.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/3/3-3.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/3/3-4.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/3/3-5.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/3/3-6.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/3/3-7.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/3/3-8.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/3/3-9.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/4/4-1.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/4/4-10.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/4/4-2.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/4/4-3.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/4/4-4.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/4/4-5.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/4/4-6.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/4/4-7.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/4/4-8.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/4/4-9.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/5/5-1.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/5/5-10.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/5/5-2.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/5/5-3.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/5/5-4.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/5/5-5.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/5/5-6.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/5/5-7.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/5/5-8.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/5/5-9.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/6/6-1.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/6/6-10.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/6/6-2.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/6/6-3.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/6/6-4.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/6/6-5.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/6/6-6.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/6/6-7.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/6/6-8.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/6/6-9.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/7/7-1.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/7/7-10.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/7/7-2.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/7/7-3.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/7/7-4.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/7/7-5.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/7/7-6.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/7/7-7.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/7/7-8.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/7/7-9.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/8/8-1.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/8/8-10.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/8/8-2.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/8/8-3.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/8/8-4.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/8/8-5.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/8/8-6.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/8/8-7.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/8/8-8.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/8/8-9.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/9/9-1.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/9/9-10.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/9/9-2.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/9/9-3.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/9/9-4.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/9/9-5.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/9/9-6.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/9/9-7.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/9/9-8.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/9/9-9.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/stand/0.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/stand/1.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/stand/2.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/stand/3.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/stand/4.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/stand/5.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/stand/6.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/stand/7.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/stand/8.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/stand/9.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/test/0.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/test/1.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/test/2.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/test/3.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/test/4.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/test/5.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/test/6.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/test/7.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/test/8.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/test/9.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/test2/0.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/test2/1.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/test2/2.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/test2/3.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/test2/4.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/test2/5.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/test2/6.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/test2/7.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/test2/8.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/image/test2/9.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/letter-recognition.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/ml/introduction_to_pca/introduction_to_pca.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/ml/introduction_to_svm/introduction_to_svm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/ml/non_linear_svms/non_linear_svms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/ml/py_svm_opencv/hogsvm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/result.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/testdata.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/例20.1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/例20.2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/例20.3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter20/版权.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/001/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/001/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/001/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/001/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/001/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/001/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/001/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/001/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/001/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/001/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/002/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/002/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/002/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/002/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/002/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/002/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/002/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/002/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/002/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/002/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/003/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/003/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/003/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/003/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/003/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/003/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/003/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/003/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/003/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/003/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/004/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/004/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/004/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/004/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/004/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/004/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/004/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/004/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/004/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/004/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/005/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/005/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/005/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/005/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/005/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/005/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/005/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/005/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/005/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/005/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/006/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/006/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/006/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/006/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/006/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/006/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/006/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/006/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/006/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/006/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/007/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/007/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/007/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/007/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/007/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/007/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/007/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/007/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/007/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/007/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/008/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/008/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/008/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/008/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/008/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/008/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/008/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/008/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/008/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/008/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/009/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/009/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/009/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/009/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/009/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/009/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/009/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/009/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/009/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/009/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/010/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/010/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/010/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/010/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/010/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/010/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/010/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/010/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/010/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/010/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/011/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/011/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/011/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/011/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/011/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/011/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/011/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/011/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/011/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/011/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/012/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/012/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/012/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/012/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/012/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/012/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/012/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/012/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/012/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/012/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/013/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/013/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/013/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/013/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/013/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/013/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/013/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/013/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/013/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/013/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/014/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/014/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/014/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/014/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/014/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/014/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/014/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/014/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/014/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/014/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/015/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/015/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/015/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/015/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/015/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/015/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/015/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/015/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/015/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/015/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/016/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/016/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/016/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/016/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/016/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/016/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/016/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/016/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/016/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/016/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/017/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/017/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/017/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/017/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/017/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/017/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/017/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/017/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/017/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/017/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/018/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/018/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/018/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/018/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/018/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/018/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/018/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/018/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/018/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/018/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/019/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/019/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/019/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/019/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/019/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/019/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/019/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/019/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/019/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/019/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/020/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/020/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/020/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/020/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/020/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/020/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/020/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/020/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/020/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/020/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/021/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/021/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/021/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/021/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/021/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/021/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/021/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/021/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/021/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/021/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/022/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/022/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/022/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/022/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/022/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/022/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/022/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/022/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/022/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/022/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/023/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/023/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/023/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/023/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/023/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/023/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/023/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/023/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/023/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/023/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/024/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/024/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/024/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/024/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/024/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/024/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/024/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/024/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/024/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/024/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/025/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/025/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/025/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/025/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/025/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/025/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/025/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/025/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/025/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/025/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/026/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/026/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/026/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/026/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/026/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/026/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/026/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/026/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/026/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/026/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/027/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/027/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/027/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/027/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/027/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/027/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/027/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/027/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/027/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/027/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/028/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/028/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/028/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/028/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/028/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/028/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/028/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/028/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/028/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/028/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/029/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/029/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/029/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/029/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/029/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/029/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/029/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/029/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/029/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/029/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/030/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/030/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/030/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/030/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/030/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/030/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/030/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/030/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/030/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/030/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/031/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/031/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/031/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/031/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/031/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/031/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/031/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/031/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/031/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/031/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/032/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/032/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/032/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/032/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/032/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/032/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/032/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/032/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/032/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/032/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/033/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/033/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/033/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/033/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/033/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/033/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/033/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/033/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/033/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/033/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/034/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/034/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/034/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/034/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/034/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/034/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/034/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/034/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/034/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/034/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/035/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/035/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/035/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/035/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/035/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/035/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/035/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/035/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/035/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/035/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/036/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/036/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/036/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/036/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/036/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/036/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/036/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/036/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/036/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/036/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/037/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/037/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/037/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/037/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/037/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/037/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/037/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/037/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/037/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/037/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/038/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/038/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/038/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/038/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/038/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/038/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/038/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/038/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/038/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/038/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/039/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/039/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/039/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/039/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/039/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/039/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/039/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/039/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/039/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/039/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/040/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/040/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/040/03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/040/04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/040/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/040/06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/040/07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/040/08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/040/09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_orl/040/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/001/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/001/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/001/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/001/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/001/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/001/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/001/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/001/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/001/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/001/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/001/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/001/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/002/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/002/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/002/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/002/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/002/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/002/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/002/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/002/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/002/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/002/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/002/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/002/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/003/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/003/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/003/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/003/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/003/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/003/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/003/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/003/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/003/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/003/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/003/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/003/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/004/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/004/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/004/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/004/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/004/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/004/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/004/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/004/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/004/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/004/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/004/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/005/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/005/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/005/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/005/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/005/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/005/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/005/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/005/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/005/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/005/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/005/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/006/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/006/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/006/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/006/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/006/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/006/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/006/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/006/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/006/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/006/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/006/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/007/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/007/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/007/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/007/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/007/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/007/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/007/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/007/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/007/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/007/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/007/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/008/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/008/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/008/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/008/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/008/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/008/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/008/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/008/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/008/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/008/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/008/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/009/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/009/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/009/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/009/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/009/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/009/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/009/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/009/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/009/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/009/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/009/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/010/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/010/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/010/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/010/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/010/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/010/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/010/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/010/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/010/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/010/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/010/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/011/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/011/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/011/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/011/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/011/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/011/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/011/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/011/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/011/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/011/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/011/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/012/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/012/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/012/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/012/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/012/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/012/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/012/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/012/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/012/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/012/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/012/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/013/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/013/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/013/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/013/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/013/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/013/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/013/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/013/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/013/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/013/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/013/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/014/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/014/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/014/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/014/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/014/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/014/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/014/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/014/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/014/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/014/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/014/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/015/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/015/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/015/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/015/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/015/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/015/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/015/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/015/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/015/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/015/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/#FaceDB#/FaceDB_yaleA/015/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/%23FaceDB%23.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/23.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter23/23.1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/23.1_1.md" beforeDir="false" afterPath="$PROJECT_DIR$/chapter23/23.1-1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/23.1_2.md" beforeDir="false" afterPath="$PROJECT_DIR$/chapter23/23.1-2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/23.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter23/23.2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/23.3.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter23/23.3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/23.4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter23/23.4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +809,9 @@
       <workItem from="1684838422868" duration="5185000" />
       <workItem from="1685762191248" duration="4594000" />
       <workItem from="1685850831644" duration="2878000" />
+      <workItem from="1685939224408" duration="70000" />
+      <workItem from="1685954015085" duration="1498000" />
+      <workItem from="1686040195307" duration="966000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1680143894050</created>
@@ -241,7 +966,7 @@
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$12_17.coverage" NAME="12.17 Coverage Results" MODIFIED="1680682718716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$17_3.coverage" NAME="17.3 Coverage Results" MODIFIED="1685764998658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter17" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$17_9.coverage" NAME="17.9 Coverage Results" MODIFIED="1680093036163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter17" />
-    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$18_1.coverage" NAME="18.1 Coverage Results" MODIFIED="1680143743876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter18" />
+    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$18_1.coverage" NAME="18.1 Coverage Results" MODIFIED="1686040327254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter18" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$12_02.coverage" NAME="12.02 Coverage Results" MODIFIED="1680666277736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$8_10.coverage" NAME="8.10 Coverage Results" MODIFIED="1681045539703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter08" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$12_11.coverage" NAME="12.11 Coverage Results" MODIFIED="1684835588898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12" />
@@ -258,9 +983,9 @@
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$2_11.coverage" NAME="2.11 Coverage Results" MODIFIED="1683301706788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter02" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$4_11.coverage" NAME="4.11 Coverage Results" MODIFIED="1684407597170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$12_26.coverage" NAME="12.26 Coverage Results" MODIFIED="1684840941920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12" />
-    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$18_2.coverage" NAME="18.2 Coverage Results" MODIFIED="1680143425415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter18" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$19_13_1.coverage" NAME="19.13_1 Coverage Results" MODIFIED="1680154973739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter19" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$12_03.coverage" NAME="12.03 Coverage Results" MODIFIED="1680666703714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12" />
+    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$18_2.coverage" NAME="18.2 Coverage Results" MODIFIED="1686040523078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter18" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$3_11.coverage" NAME="3.11 Coverage Results" MODIFIED="1684401799720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$5_16.coverage" NAME="5.16 Coverage Results" MODIFIED="1684748690111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$2_10.coverage" NAME="2.10 Coverage Results" MODIFIED="1683301616376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter02" />
@@ -273,7 +998,7 @@
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$12_28.coverage" NAME="12.28 Coverage Results" MODIFIED="1684841223731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$12_25.coverage" NAME="12.25 Coverage Results" MODIFIED="1680689505231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$17_5.coverage" NAME="17.5 Coverage Results" MODIFIED="1685766238403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter17" />
-    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$18_3.coverage" NAME="18.3 Coverage Results" MODIFIED="1680143712683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter18" />
+    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$18_3.coverage" NAME="18.3 Coverage Results" MODIFIED="1686040967087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter18" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$12_34.coverage" NAME="12.34 Coverage Results" MODIFIED="1680756892103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$2_09.coverage" NAME="2.09 Coverage Results" MODIFIED="1683301411449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter02" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$3_09.coverage" NAME="3.09 Coverage Results" MODIFIED="1684401065847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
@@ -288,9 +1013,9 @@
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$19_06.coverage" NAME="19.06 Coverage Results" MODIFIED="1680150130632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter19" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$19_12.coverage" NAME="19.12 Coverage Results" MODIFIED="1680152273737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter19" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$19_03.coverage" NAME="19.03 Coverage Results" MODIFIED="1680147221326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter19" />
-    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$23_1.coverage" NAME="23.1 Coverage Results" MODIFIED="1680440956666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter23" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$5_09.coverage" NAME="5.09 Coverage Results" MODIFIED="1684748188907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$9_09.coverage" NAME="9.09 Coverage Results" MODIFIED="1684831301299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter09" />
+    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$23_1.coverage" NAME="23.1 Coverage Results" MODIFIED="1685954223208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter23" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$12_19.coverage" NAME="12.19 Coverage Results" MODIFIED="1680684104810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$5_15.coverage" NAME="5.15 Coverage Results" MODIFIED="1684748661591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$20_1.coverage" NAME="例20.1 Coverage Results" MODIFIED="1680165402748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter20" />
@@ -301,8 +1026,8 @@
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$12_06.coverage" NAME="12.06 Coverage Results" MODIFIED="1680668322842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$5_02.coverage" NAME="5.02 Coverage Results" MODIFIED="1684745159018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$19_01.coverage" NAME="19.01 Coverage Results" MODIFIED="1680145275110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter19" />
-    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$23_3.coverage" NAME="23.3 Coverage Results" MODIFIED="1680438964220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter23" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$4_02.coverage" NAME="4.02 Coverage Results" MODIFIED="1684405761206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04" />
+    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$23_3.coverage" NAME="23.3 Coverage Results" MODIFIED="1685955082262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter23" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$7_10_filter2D.coverage" NAME="7.10-filter2D Coverage Results" MODIFIED="1681043027909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter07" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$2_02.coverage" NAME="2.02 Coverage Results" MODIFIED="1683214775490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter02" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$12_26_27.coverage" NAME="12.26-27 Coverage Results" MODIFIED="1684841124291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12" />
@@ -363,7 +1088,7 @@
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$2_06.coverage" NAME="2.06 Coverage Results" MODIFIED="1683300878896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter02" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$12_16.coverage" NAME="12.16 Coverage Results" MODIFIED="1684836352582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$3_06.coverage" NAME="3.06 Coverage Results" MODIFIED="1684400442977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
-    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$23_4.coverage" NAME="23.4 Coverage Results" MODIFIED="1680440478791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter23" />
+    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$23_4.coverage" NAME="23.4 Coverage Results" MODIFIED="1685955223542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter23" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$7_09_GaussianBlur_bilateralFilter.coverage" NAME="7.09-GaussianBlur+bilateralFilter Coverage Results" MODIFIED="1681042498308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter07" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$12_22.coverage" NAME="12.22 Coverage Results" MODIFIED="1684839454297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$12_07.coverage" NAME="12.07 Coverage Results" MODIFIED="1684835080646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12" />
@@ -403,7 +1128,7 @@
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$7_05_boxFilter.coverage" NAME="7.05-boxFilter Coverage Results" MODIFIED="1680659426691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter07" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$5_19.coverage" NAME="5.19 Coverage Results" MODIFIED="1684748920741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$2_01.coverage" NAME="2.01 Coverage Results" MODIFIED="1683214711326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter02" />
-    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$23_2.coverage" NAME="23.2 Coverage Results" MODIFIED="1680440692839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter23" />
+    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$23_2.coverage" NAME="23.2 Coverage Results" MODIFIED="1685954818704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter23" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$19_02.coverage" NAME="19.02 Coverage Results" MODIFIED="1680145380274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter19" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$12_24.coverage" NAME="12.24 Coverage Results" MODIFIED="1684840308097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$7_03_boxFilter.coverage" NAME="7.03-boxFilter Coverage Results" MODIFIED="1680659082758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter07" />
