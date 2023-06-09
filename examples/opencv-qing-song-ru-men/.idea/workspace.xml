@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="48cac9f3-27ac-4169-980b-90a57f3f89c6" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.11.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.11-adaptiveThreshold.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.12.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.12.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.13.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.13-THRESH_OTSU.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter07/7.08.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter07/7.08.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +90,7 @@
       <workItem from="1685939224408" duration="70000" />
       <workItem from="1685954015085" duration="1498000" />
       <workItem from="1686040195307" duration="7056000" />
-      <workItem from="1686278574763" duration="1191000" />
+      <workItem from="1686278574763" duration="2952000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1680143894050</created>
@@ -206,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686047696354</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update">
+      <created>1686279794520</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1686279794520</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
