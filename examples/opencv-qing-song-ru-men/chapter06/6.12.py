@@ -11,7 +11,7 @@ thresh1, img_thresh = cv.threshold(img, 127, 255, cv.THRESH_BINARY)
 print(f'thresh1 = {thresh1}')
 print(f'img_thresh = \n{img_thresh}')
 
-thresh2, img_otsu = cv.threshold(img, 0, 255, cv.THRESH_OTSU)
+thresh2, img_otsu = cv.threshold(img, 0, 255, cv.THRESH_BINARY + cv.THRESH_OTSU)
 print(f'thresh2 = {thresh2}')
 print(f'img_otsu = \n{img_otsu}')
 
