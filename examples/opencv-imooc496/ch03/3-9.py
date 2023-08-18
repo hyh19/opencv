@@ -17,7 +17,7 @@ while cap.isOpened():
     if ret is True:
         # 将视频帧在窗口中显示
         cv2.imshow('video', frame)
-        # 重新将窗口设备为指定大小
+        # 重新将窗口设定为指定大小
         cv2.resizeWindow('video', 640, 360)
         # 写数据到视频文件
         vw.write(frame)
