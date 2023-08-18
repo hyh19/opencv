@@ -4,10 +4,15 @@ import cv2
 img = np.zeros((480, 640, 3), np.uint8)
 
 roi = img[100:400, 100:600]
-# roi[:,:] = [0,0,255]
-roi[:] = [0, 0, 255]
-roi[:, 50] = [0, 0, 0]
-roi[10:200, 10:200] = [0, 255, 0]
+
+example = 2
+if example == 0:
+    roi[:, :] = [0, 0, 255]
+    # roi[:] = [0, 0, 255]
+elif example == 1:
+    roi[:, 50] = [0, 0, 255]
+elif example == 2:
+    roi[10:200, 10:200] = [0, 255, 0]
 
 cv2.imshow('img', roi)
 key = cv2.waitKey(0)

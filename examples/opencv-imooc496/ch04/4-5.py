@@ -7,7 +7,6 @@ img = np.zeros((480, 640, 3), np.uint8)
 print(img[100, 80])
 
 example = 2
-
 if example == 0:
     count = 0
     while count < 200:
