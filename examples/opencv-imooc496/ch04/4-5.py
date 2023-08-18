@@ -1,5 +1,5 @@
+import cv2 as cv
 import numpy as np
-import cv2
 
 img = np.zeros((480, 640, 3), np.uint8)
 
@@ -23,7 +23,7 @@ elif example == 2:
         img[count, 100] = [255, 255, 0]
         count += 1
 
-cv2.imshow('img', img)
-key = cv2.waitKey(0)
+cv.imshow('img', img)
+key = cv.waitKey(0)
 if key & 0xFF == ord('q'):
-    cv2.destroyAllWindows()
+    cv.destroyAllWindows()

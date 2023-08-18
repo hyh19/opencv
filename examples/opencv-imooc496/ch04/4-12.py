@@ -1,20 +1,20 @@
-import cv2
+import cv2 as cv
 import numpy as np
 
 img = np.zeros((480, 640, 3), np.uint8)
 
-b, g, r = cv2.split(img)
+b, g, r = cv.split(img)
 
 b[10:100, 10:100] = 255
 g[10:100, 10:100] = 255
 
-img2 = cv2.merge((b, g, r))
+img_merge = cv.merge((b, g, r))
 
-cv2.imshow('img', img)
-cv2.imshow('b', b)
-cv2.imshow('g', g)
-cv2.imshow('img2', img2)
+cv.imshow('img', img)
+cv.imshow('b', b)
+cv.imshow('g', g)
+cv.imshow('img_merge', img_merge)
 
-key = cv2.waitKey(0)
+key = cv.waitKey(0)
 if key & 0xFF == ord('q'):
-    cv2.destroyAllWindows()
+    cv.destroyAllWindows()
