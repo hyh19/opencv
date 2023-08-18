@@ -1,17 +1,17 @@
-import cv2
+import cv2 as cv
 
-img = cv2.imread('../images/j.png')
+img = cv.imread('../images/j.png')
 
-kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
+kernel = cv.getStructuringElement(cv.MORPH_RECT, (3, 3))
 print(kernel)
 
-dst = cv2.dilate(img, kernel, iterations=1)
+dst = cv.dilate(img, kernel, iterations=1)
 
-cv2.imshow('img', img)
-cv2.imshow('dst', dst)
+cv.imshow('img', img)
+cv.imshow('dst', dst)
 
-key = cv2.waitKey(0)
+key = cv.waitKey(0)
 if key & 0xFF == ord('q'):
-    cv2.destroyAllWindows()
+    cv.destroyAllWindows()
 
 # dilate: https://t.ly/Mkxq

@@ -1,17 +1,17 @@
-import cv2
+import cv2 as cv
 
-img = cv2.imread('../images/dotj.png')
+img = cv.imread('../images/dotj.png')
 
-kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (7, 7))
+kernel = cv.getStructuringElement(cv.MORPH_RECT, (7, 7))
 print(kernel)
 
-dst = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel)
+dst = cv.morphologyEx(img, cv.MORPH_OPEN, kernel)
 
-cv2.imshow('img', img)
-cv2.imshow('dst', dst)
+cv.imshow('img', img)
+cv.imshow('dst', dst)
 
-key = cv2.waitKey(0)
+key = cv.waitKey(0)
 if key & 0xFF == ord('q'):
-    cv2.destroyAllWindows()
+    cv.destroyAllWindows()
 
 # morphologyEx: https://t.ly/6hb9x
