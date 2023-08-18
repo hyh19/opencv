@@ -4,20 +4,25 @@ import cv2
 img = np.zeros((480, 640, 3), np.uint8)
 
 # 从矩阵中读取某个元素的值
-# print(img[100, 80])
+print(img[100, 80])
 
-# count = 0
-# while count < 200:
-#     img[count, 80, 0] = 255
-#     count += 1
+example = 2
 
-
-# 对矩阵中某个元素赋值
-count = 0
-while count < 200:
-    # BGR
-    img[count, 100] = [255, 255, 255]
-    count += 1
+if example == 0:
+    count = 0
+    while count < 200:
+        img[count, 80] = 255
+        count += 1
+elif example == 1:
+    count = 0
+    while count < 200:
+        img[count, 80, 0] = 255
+        count += 1
+elif example == 2:
+    count = 0
+    while count < 200:
+        img[count, 100] = [255, 255, 0]
+        count += 1
 
 cv2.imshow('img', img)
 key = cv2.waitKey(0)
