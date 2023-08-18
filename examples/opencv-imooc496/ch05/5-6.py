@@ -1,4 +1,4 @@
-import cv2
+import cv2 as cv
 import numpy as np
 
 cur_shape = 0
@@ -13,30 +13,30 @@ def mouse_callback(event, x, y, flags, userdata):
     # print(event, x, y, flags, userdata)
     global cur_shape, start_pos
 
-    if event & cv2.EVENT_LBUTTONDOWN == cv2.EVENT_LBUTTONDOWN:
+    if event & cv.EVENT_LBUTTONDOWN == cv.EVENT_LBUTTONDOWN:
         start_pos = (x, y)
-    elif event & cv2.EVENT_LBUTTONUP == cv2.EVENT_LBUTTONUP:
+    elif event & cv.EVENT_LBUTTONUP == cv.EVENT_LBUTTONUP:
         if cur_shape == 0:  # draw line
-            cv2.line(img, start_pos, (x, y), (0, 0, 255))
+            cv.line(img, start_pos, (x, y), (0, 0, 255))
         elif cur_shape == 1:  # draw rectangle
-            cv2.rectangle(img, start_pos, (x, y), (0, 0, 255))
+            cv.rectangle(img, start_pos, (x, y), (0, 0, 255))
         elif cur_shape == 2:  # draw circle
             a = x - start_pos[0]
             b = y - start_pos[1]
             r = int((a ** 2 + b ** 2) ** 0.5)
-            cv2.circle(img, start_pos, r, (0, 0, 255))
+            cv.circle(img, start_pos, r, (0, 0, 255))
         else:
             print('error: no shape')
 
 
 # 创建窗口
-cv2.namedWindow('draw shape', cv2.WINDOW_NORMAL)
+cv.namedWindow('draw shape', cv.WINDOW_NORMAL)
 # 设置鼠标回调
-cv2.setMouseCallback('draw shape', mouse_callback)
+cv.setMouseCallback('draw shape', mouse_callback)
 
 while True:
-    cv2.imshow('draw shape', img)
-    key = cv2.waitKey(1) & 0xFF
+    cv.imshow('draw shape', img)
+    key = cv.waitKey(1) & 0xFF
     if key == ord('q'):
         break
     elif key == ord('l'):  # line
@@ -46,4 +46,4 @@ while True:
     elif key == ord('c'):  # circle
         cur_shape = 2
 
-cv2.destroyAllWindows()
+cv.destroyAllWindows()
