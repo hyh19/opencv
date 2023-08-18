@@ -1,10 +1,10 @@
-import cv2
+import cv2 as cv
 
-cv2.namedWindow('img', cv2.WINDOW_NORMAL)
-img = cv2.imread('../images/hello.jpeg')
-cv2.imshow('img', img)
-key = cv2.waitKey(0)
+cv.namedWindow('img', cv.WINDOW_NORMAL)
+img = cv.imread('../images/hello.jpeg')
+cv.imshow('img', img)
+key = cv.waitKey(0)
 # 错误写法 3-4.py 修复
 if key == 'q':
     exit()
-cv2.destroyAllWindows()
+cv.destroyAllWindows()

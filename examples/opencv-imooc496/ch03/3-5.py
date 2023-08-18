@@ -1,14 +1,14 @@
-import cv2
+import cv2 as cv
 
-cv2.namedWindow('img', cv2.WINDOW_NORMAL)
-img = cv2.imread('../images/hello.jpeg')
+cv.namedWindow('img', cv.WINDOW_NORMAL)
+img = cv.imread('../images/hello.jpeg')
 while True:
-    cv2.imshow('img', img)
-    key = cv2.waitKey(0)
+    cv.imshow('img', img)
+    key = cv.waitKey(0)
     if key & 0xFF == ord('q'):
         break
     elif key & 0xFF == ord('s'):
-        cv2.imwrite('/Users/hyh/Downloads/output.png', img)
+        cv.imwrite('/Users/hyh/Downloads/output.png', img)
     else:
         print(key)
-cv2.destroyAllWindows()
+cv.destroyAllWindows()
