@@ -6,7 +6,7 @@ def callback(x):
 
 
 cv2.namedWindow('color', cv2.WINDOW_NORMAL)
-img = cv2.imread('images/RMB.jpeg')
+img = cv2.imread('../images/RMB.jpeg')
 color_spaces = [cv2.COLOR_BGR2RGBA, cv2.COLOR_BGR2BGRA,
                 cv2.COLOR_BGR2GRAY, cv2.COLOR_BGR2HSV,
                 cv2.COLOR_BGR2YUV]
