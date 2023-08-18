@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread('images/math.png')
+img = cv2.imread('../images/math.png')
 img1 = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 dst = cv2.adaptiveThreshold(img1, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,

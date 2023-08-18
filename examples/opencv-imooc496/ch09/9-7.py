@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread('images/j.png')
+img = cv2.imread('../images/j.png')
 
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
 print(kernel)

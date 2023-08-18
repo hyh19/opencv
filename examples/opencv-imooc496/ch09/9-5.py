@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('images/j.png')
+img = cv2.imread('../images/j.png')
 
 kernel = np.ones((3, 3), np.uint8)
 dst = cv2.erode(img, kernel, iterations=1)

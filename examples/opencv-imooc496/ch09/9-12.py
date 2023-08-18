@@ -1,11 +1,11 @@
 import cv2
 
-img = cv2.imread('images/dotinj.png')
+img = cv2.imread('../images/dotinj.png')
 
-kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (9, 9))
+kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (7, 7))
 print(kernel)
 
-dst = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)
+dst = cv2.morphologyEx(img, cv2.MORPH_BLACKHAT, kernel)
 
 cv2.imshow('img', img)
 cv2.imshow('dst', dst)
