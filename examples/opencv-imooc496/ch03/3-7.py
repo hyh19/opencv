@@ -4,7 +4,7 @@ cv2.namedWindow('video', cv2.WINDOW_NORMAL)
 cv2.resizeWindow('video', 640, 360)
 
 # 打开视频文件
-cap = cv2.VideoCapture('/Users/hyh/Downloads/input.mp4')
+cap = cv2.VideoCapture('../images/video.mp4')
 
 while True:
     # 从视频文件读取视频帧
