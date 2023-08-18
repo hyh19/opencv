@@ -11,7 +11,7 @@ def drawShape(src, points):
 
 
 # 读文件
-img = cv2.imread('hand.png')
+img = cv2.imread('images/hand.png')
 
 print(img.shape)
 

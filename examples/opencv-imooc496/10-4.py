@@ -1,7 +1,7 @@
 import cv2
 
 # 读文件
-img = cv2.imread('contours1.jpeg')
+img = cv2.imread('images/contours1.jpeg')
 
 print(img.shape)
 

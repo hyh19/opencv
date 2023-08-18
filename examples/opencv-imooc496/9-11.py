@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread('tophat.png')
+img = cv2.imread('images/tophat.png')
 
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (19, 19))
 print(kernel)

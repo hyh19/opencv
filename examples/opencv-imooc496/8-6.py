@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread('papper.png')
+img = cv2.imread('images/papper.png')
 
 # 中值滤波
 dst = cv2.medianBlur(img, 5)

@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread('dog.jpeg')
+img = cv2.imread('images/dog.jpeg')
 
 # 均值滤波
 dst = cv2.blur(img, (5, 5))

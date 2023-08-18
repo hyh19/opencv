@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread('dotinj.png')
+img = cv2.imread('images/dotinj.png')
 
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (7, 7))
 print(kernel)

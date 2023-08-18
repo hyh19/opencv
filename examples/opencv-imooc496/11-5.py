@@ -1,7 +1,7 @@
 import cv2
 
 # 读文件
-img = cv2.imread('chess.png')
+img = cv2.imread('images/chess.png')
 
 # 灰度化
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

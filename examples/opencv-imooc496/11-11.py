@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 
 # 打开两个文件
-img1 = cv2.imread('opencv_search.png')
-img2 = cv2.imread('opencv_orig.png')
+img1 = cv2.imread('images/opencv_search.png')
+img2 = cv2.imread('images/opencv_orig.png')
 
 # 灰度化
 g1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)

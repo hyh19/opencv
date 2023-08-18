@@ -6,7 +6,7 @@ maxCorners = 1000
 ql = 0.01
 minDistance = 10
 
-img = cv2.imread('chess.png')
+img = cv2.imread('images/chess.png')
 
 # 灰度化
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

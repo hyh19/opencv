@@ -1,6 +1,6 @@
 import cv2
 
-dog = cv2.imread('dog.jpeg')
+dog = cv2.imread('images/dog.jpeg')
 new1 = cv2.flip(dog, 0)
 new2 = cv2.flip(dog, 1)
 new3 = cv2.flip(dog, -1)

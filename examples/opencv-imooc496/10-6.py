@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # 读文件
-img = cv2.imread('hello.jpeg')
+img = cv2.imread('images/hello.jpeg')
 
 print(img.shape)
 

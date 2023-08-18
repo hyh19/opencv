@@ -1,7 +1,7 @@
 import cv2
 
-back = cv2.imread('./back.jpeg')
-small_cat = cv2.imread('./small_cat_1.jpeg')
+back = cv2.imread('images/back.jpeg')
+small_cat = cv2.imread('images/small_cat_1.jpeg')
 
 # 只有两张图的属性是一样的才可以进行溶合
 print(back.shape)

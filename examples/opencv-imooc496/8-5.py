@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread('gaussian.png')
+img = cv2.imread('images/gaussian.png')
 
 # 高斯滤波
 dst = cv2.GaussianBlur(img, (5, 5), sigmaX=1)

@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread('lena.png')
+img = cv2.imread('images/lena.png')
 
 # 双边滤波
 dst = cv2.bilateralFilter(img, 7, 20, 50)

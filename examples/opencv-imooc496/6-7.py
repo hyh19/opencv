@@ -18,7 +18,7 @@ mask_not = cv2.bitwise_not(mask)
 cv2.imshow('mask_not', mask_not)
 
 # 导入图片
-dog = cv2.imread('dog.jpeg')
+dog = cv2.imread('images/dog.jpeg')
 
 # 选择 dog 添加 logo 的位置
 roi = dog[0:200, 0:200]

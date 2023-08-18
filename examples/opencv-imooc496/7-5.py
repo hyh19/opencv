@@ -1,6 +1,6 @@
 import cv2
 
-dog = cv2.imread('dog.jpeg')
+dog = cv2.imread('images/dog.jpeg')
 h, w, ch = dog.shape
 print(dog.shape)
 
