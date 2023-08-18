@@ -3,7 +3,6 @@ import cv2
 cv2.namedWindow('video', cv2.WINDOW_NORMAL)
 cv2.resizeWindow('video', 640, 360)
 
-# 打开摄像头
 cap = cv2.VideoCapture(0)
 
 # 创建 VideoWriter 写视频文件
