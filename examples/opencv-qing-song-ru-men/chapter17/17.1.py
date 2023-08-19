@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-import cv2
+import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv2.imread("rice.png")
+img = cv.imread("rice.png")
 kernel = np.ones((5, 5), np.uint8)
-img_erode = cv2.erode(img, kernel)
-img_subtract = cv2.subtract(img, img_erode)
+img_erode = cv.erode(img, kernel)
+img_subtract = cv.subtract(img, img_erode)
 plt.subplot(131), plt.imshow(img), plt.axis('off')
 plt.subplot(132), plt.imshow(img_erode), plt.axis('off')
 plt.subplot(133), plt.imshow(img_subtract), plt.axis('off')
