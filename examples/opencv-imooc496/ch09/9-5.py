@@ -4,10 +4,10 @@ import numpy as np
 img = cv.imread('../images/j.png')
 
 kernel = np.ones((3, 3), np.uint8)
-dst = cv.erode(img, kernel, iterations=1)
+result = cv.erode(img, kernel, iterations=1)
 
 cv.imshow('img', img)
-cv.imshow('dst', dst)
+cv.imshow('result', result)
 
 key = cv.waitKey(0)
 if key & 0xFF == ord('q'):
