@@ -1,29 +1,22 @@
 import cv2 as cv
 
-# 读文件
 img = cv.imread('../images/contours1.jpeg')
+img_gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+_, img_bin = cv.threshold(img_gray, thresh=150, maxval=255, type=cv.THRESH_BINARY)
 
-print(img.shape)
-
-# 转变成单通道
-gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
-
-# 二值化
-ret, binary = cv.threshold(gray, 150, 255, cv.THRESH_BINARY)
-
-# 轮廓查找
-contours, hierarchy = cv.findContours(binary, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
+# 查找轮廓
+contours, hierarchy = cv.findContours(img_bin, mode=cv.RETR_TREE, method=cv.CHAIN_APPROX_SIMPLE)
 
 # 绘制轮廓
-cv.drawContours(img, contours, -1, (0, 0, 255), 1)
+cv.drawContours(img, contours, contourIdx=-1, color=(0, 0, 255), thickness=1)
 
 # 计算面积
 area = cv.contourArea(contours[0])
-print("area=%d" % area)
+print(f'area = {area}')
 
 # 计算周长
-length = cv.arcLength(contours[0], False)
-print("len=%d" % length)
+length = cv.arcLength(contours[0], closed=True)
+print(f'len = {length}')
 
 cv.imshow('img', img)
 

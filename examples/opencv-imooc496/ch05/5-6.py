@@ -1,6 +1,8 @@
 import cv2 as cv
 import numpy as np
 
+# TODO 复习 8.18
+
 cur_shape = 0
 start_pos = (0, 0)
 

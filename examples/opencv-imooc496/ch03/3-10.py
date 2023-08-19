@@ -2,6 +2,8 @@ import cv2 as cv
 import numpy as np
 
 
+# TODO 复习 8.18
+
 # 鼠标回调函数
 def mouse_callback(event, x, y, flags, userdata):
     print(event, x, y, flags, userdata)

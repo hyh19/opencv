@@ -1,40 +1,29 @@
 import cv2 as cv
 
 
-def drawShape(src, points):
-    i, n = 0, len(points)
+def draw_cruve(canvas, curve):
+    i, n = 0, len(curve)
     while i < n:
-        x, y = points[i % n][0]
-        x1, y1 = points[(i + 1) % n][0]
-        cv.line(src, (x, y), (x1, y1), (0, 0, 255), 3)
-        i = i + 1
+        cv.line(canvas, pt1=curve[i % n][0], pt2=curve[(i + 1) % n][0],
+                color=(0, 0, 255), thickness=1)
+        i += 1
 
 
-# 读文件
 img = cv.imread('../images/hand.png')
+img_gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+_, img_bin = cv.threshold(img_gray, thresh=150, maxval=255, type=cv.THRESH_BINARY)
 
-print(img.shape)
-
-# 转变成单通道
-gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
-
-# 二值化
-ret, binary = cv.threshold(gray, 150, 255, cv.THRESH_BINARY)
-
-# 轮廓查找
-contours, hierarchy = cv.findContours(binary, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
+# 查找轮廓
+contours, hierarchy = cv.findContours(img_bin, mode=cv.RETR_TREE, method=cv.CHAIN_APPROX_SIMPLE)
 
 # 绘制轮廓
-cv.drawContours(img, contours, 0, (0, 255, 0), 1)
+cv.drawContours(img, contours, contourIdx=-1, color=(0, 0, 255), thickness=1)
 
-e = 5
-approx = cv.approxPolyDP(contours[0], e, True)
-
-drawShape(img, approx)
+approx_curve = cv.approxPolyDP(contours[0], epsilon=5, closed=True)
+draw_cruve(img, approx_curve)
 
 hull = cv.convexHull(contours[0])
-
-drawShape(img, hull)
+draw_cruve(img, hull)
 
 cv.imshow('img', img)
 

@@ -2,6 +2,8 @@ import cv2 as cv
 import numpy as np
 
 
+# TODO 复习 8.18
+
 def callback(x):
     pass
 

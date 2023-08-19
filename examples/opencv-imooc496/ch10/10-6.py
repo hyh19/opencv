@@ -1,24 +1,20 @@
 import cv2 as cv
 import numpy as np
 
-# 读文件
 img = cv.imread('../images/hello.jpeg')
+img_gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+_, img_bin = cv.threshold(img_gray, thresh=150, maxval=255, type=cv.THRESH_BINARY)
 
-print(img.shape)
+# 查找轮廓
+contours, hierarchy = cv.findContours(img_bin, mode=cv.RETR_TREE, method=cv.CHAIN_APPROX_SIMPLE)
 
-# 转变成单通道
-gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
-
-# 二值化
-ret, binary = cv.threshold(gray, 150, 255, cv.THRESH_BINARY)
-
-# 轮廓查找
-contours, hierarchy = cv.findContours(binary, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
+# 绘制轮廓
+cv.drawContours(img, contours, contourIdx=-1, color=(0, 0, 255), thickness=1)
 
 r = cv.minAreaRect(contours[1])
 box = cv.boxPoints(r)
-box = np.int0(box)
-cv.drawContours(img, [box], 0, (0, 0, 255), 2)
+box = np.intp(box)
+cv.drawContours(img, contours=[box], contourIdx=0, color=(0, 255, 0), thickness=2)
 
 x, y, w, h = cv.boundingRect(contours[1])
 cv.rectangle(img, (x, y), (x + w, y + h), (255, 0, 0), 2)

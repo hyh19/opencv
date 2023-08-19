@@ -1,5 +1,7 @@
 import cv2 as cv
 
+# TODO 复习 8.18
+
 min_w = 90
 min_h = 90
 
