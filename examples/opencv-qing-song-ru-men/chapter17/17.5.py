@@ -9,11 +9,11 @@ cv.imshow('img', img)
 img_gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow('gray', img_gray)
 
-_, img_binary_inv = cv.threshold(img_gray, 0, 255, cv.THRESH_BINARY_INV + cv.THRESH_OTSU)
-cv.imshow('binary_inv', img_binary_inv)
+_, img_bin_inv = cv.threshold(img_gray, 0, 255, cv.THRESH_BINARY_INV + cv.THRESH_OTSU)
+cv.imshow('binary_inv', img_bin_inv)
 
 kernel = np.ones((3, 3), np.uint8)
-img_open = cv.morphologyEx(img_binary_inv, cv.MORPH_OPEN, kernel, iterations=2)
+img_open = cv.morphologyEx(img_bin_inv, cv.MORPH_OPEN, kernel, iterations=2)
 cv.imshow('open', img_open)
 
 img_dilate = cv.dilate(img_open, kernel, iterations=3)
