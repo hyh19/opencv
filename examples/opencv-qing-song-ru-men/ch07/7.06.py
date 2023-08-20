@@ -2,7 +2,7 @@
 import cv2 as cv
 
 img = cv.imread('lenaNoise.png')
-res = cv.GaussianBlur(img, (5, 5), 0, 0)
+res = cv.GaussianBlur(img, ksize=(5, 5), sigmaX=0, sigmaY=0)
 cv.imshow('img', img)
 cv.imshow('res', res)
 cv.waitKey()

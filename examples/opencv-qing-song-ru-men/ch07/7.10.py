@@ -3,8 +3,8 @@ import cv2 as cv
 import numpy as np
 
 img = cv.imread('lena.bmp')
-kernel = np.ones((9, 9), np.float32) / 81
-res = cv.filter2D(img, -1, kernel)
+kernel = np.ones((9, 9), dtype=np.float32) / 81
+res = cv.filter2D(img, ddepth=-1, kernel=kernel)
 cv.imshow('img', img)
 cv.imshow('res', res)
 cv.waitKey()

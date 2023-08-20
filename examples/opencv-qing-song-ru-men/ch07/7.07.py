@@ -2,7 +2,7 @@
 import cv2 as cv
 
 img = cv.imread('lenaNoise.png')
-res = cv.medianBlur(img, 3)
+res = cv.medianBlur(img, ksize=3)
 cv.imshow('img', img)
 cv.imshow('res', res)
 cv.waitKey()

@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48cac9f3-27ac-4169-980b-90a57f3f89c6" name="Changes" comment="refactor">
+    <list default="true" id="48cac9f3-27ac-4169-980b-90a57f3f89c6" name="Changes" comment="重命名">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.01.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.02.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.03.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.03.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.04.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.04.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.05.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.05.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.06.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.06.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.07.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.07.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.08.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.08.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.09.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.09.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.10.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.10.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.11-adaptiveThreshold.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.11.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.12.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.12.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter06/6.13-THRESH_OTSU.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06/6.13.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch07/7.01.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch07/7.01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch07/7.02.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch07/7.02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch07/7.03.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch07/7.03.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch07/7.04.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch07/7.04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch07/7.05.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch07/7.05.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch07/7.06.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch07/7.06.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch07/7.07.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch07/7.07.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch07/7.08.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch07/7.08.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch07/7.09.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch07/7.09.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch07/7.10.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch07/7.10.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +106,7 @@
       <workItem from="1686278574763" duration="2952000" />
       <workItem from="1692433092171" duration="6811000" />
       <workItem from="1692452988735" duration="1445000" />
-      <workItem from="1692536841756" duration="1032000" />
+      <workItem from="1692536841756" duration="2024000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1680143894050</created>
@@ -272,7 +269,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692456039575</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="refactor">
+      <created>1692537984764</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1692537984764</updated>
+    </task>
+    <task id="LOCAL-00025" summary="重命名">
+      <created>1692538104913</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1692538104913</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +303,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="重命名" />
+    <option name="LAST_COMMIT_MESSAGE" value="重命名" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -320,13 +332,15 @@
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$8_07.coverage" NAME="8.07 Coverage Results" MODIFIED="1681044646984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter08" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$9_07.coverage" NAME="9.07 Coverage Results" MODIFIED="1681047324965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter09" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$9_01.coverage" NAME="9.01 Coverage Results" MODIFIED="1681046731229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter09" />
-    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$6_01.coverage" NAME="6.01 Coverage Results" MODIFIED="1692536914144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter06" />
+    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$7_01.coverage" NAME="7.01 Coverage Results" MODIFIED="1692538264376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07" />
+    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$6_01.coverage" NAME="6.01 Coverage Results" MODIFIED="1692538084524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch06" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$6_07.coverage" NAME="6.07 Coverage Results" MODIFIED="1692537334707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter06" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$4_01.coverage" NAME="4.01 Coverage Results" MODIFIED="1684405673167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$3_01.coverage" NAME="3.01 Coverage Results" MODIFIED="1684399561706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$5_01.coverage" NAME="5.01 Coverage Results" MODIFIED="1684745046373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$19_08.coverage" NAME="19.08 Coverage Results" MODIFIED="1686042754167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter19" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$6_10.coverage" NAME="6.10 Coverage Results" MODIFIED="1692537406968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter06" />
+    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$7_07.coverage" NAME="7.07 Coverage Results" MODIFIED="1692538601428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$5_10.coverage" NAME="5.10 Coverage Results" MODIFIED="1684748376826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$12_17.coverage" NAME="12.17 Coverage Results" MODIFIED="1680682718716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$17_3.coverage" NAME="17.3 Coverage Results" MODIFIED="1692437663202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter17" />
@@ -373,8 +387,8 @@
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$12_31.coverage" NAME="12.31 Coverage Results" MODIFIED="1684841873964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$7_08_bilaternalFilter.coverage" NAME="7.08-bilaternalFilter Coverage Results" MODIFIED="1681042527825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter07" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$17_8.coverage" NAME="17.8 Coverage Results" MODIFIED="1685852656867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter17" />
-    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$7_09.coverage" NAME="7.09 Coverage Results" MODIFIED="1681042872439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter07" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$6_09.coverage" NAME="6.09 Coverage Results" MODIFIED="1692537385937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter06" />
+    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$7_09.coverage" NAME="7.09 Coverage Results" MODIFIED="1692538821403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$19_06.coverage" NAME="19.06 Coverage Results" MODIFIED="1680150130632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter19" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$19_12.coverage" NAME="19.12 Coverage Results" MODIFIED="1686045965365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter19" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$5_09.coverage" NAME="5.09 Coverage Results" MODIFIED="1684748188907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05" />
@@ -403,6 +417,7 @@
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$5_13.coverage" NAME="5.13 Coverage Results" MODIFIED="1684748546409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$8_02.coverage" NAME="8.02 Coverage Results" MODIFIED="1692433864344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter08" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$5_07.coverage" NAME="5.07 Coverage Results" MODIFIED="1684747361887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05" />
+    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$7_02.coverage" NAME="7.02 Coverage Results" MODIFIED="1692538282760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$2_13.coverage" NAME="2.13 Coverage Results" MODIFIED="1683302027329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter02" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$3_07.coverage" NAME="3.07 Coverage Results" MODIFIED="1684400869399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$3_13.coverage" NAME="3.13 Coverage Results" MODIFIED="1684403209913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
@@ -411,6 +426,7 @@
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$20_2.coverage" NAME="例20.2 Coverage Results" MODIFIED="1680165459864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter20" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$7_1_blur.coverage" NAME="7.1_blur Coverage Results" MODIFIED="1680658463459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter07" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$9_04.coverage" NAME="9.04 Coverage Results" MODIFIED="1684830451506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter09" />
+    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$7_04.coverage" NAME="7.04 Coverage Results" MODIFIED="1692538466560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$9_13.coverage" NAME="9.13 Coverage Results" MODIFIED="1684831967096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter09" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$8_04.coverage" NAME="8.04 Coverage Results" MODIFIED="1681044160079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter08" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$19_14.coverage" NAME="19.14 Coverage Results" MODIFIED="1686047667070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter19" />
@@ -444,6 +460,7 @@
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$17_7.coverage" NAME="17.7 Coverage Results" MODIFIED="1685852120934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter17" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$4_04.coverage" NAME="4.04 Coverage Results" MODIFIED="1684406067476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$19_05.coverage" NAME="19.05 Coverage Results" MODIFIED="1686042342605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter19" />
+    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$7_05.coverage" NAME="7.05 Coverage Results" MODIFIED="1692538484812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$3_04.coverage" NAME="3.04 Coverage Results" MODIFIED="1684400110103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$8_05.coverage" NAME="8.05 Coverage Results" MODIFIED="1692433992553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter08" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$2_04.coverage" NAME="2.04 Coverage Results" MODIFIED="1683215482193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter02" />
@@ -461,7 +478,9 @@
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$8_12.coverage" NAME="8.12 Coverage Results" MODIFIED="1681045817520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter08" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$5_06.coverage" NAME="5.06 Coverage Results" MODIFIED="1684746878353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$19_09.coverage" NAME="19.09 Coverage Results" MODIFIED="1686042974023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter19" />
+    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$7_06.coverage" NAME="7.06 Coverage Results" MODIFIED="1692538549968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$5_03.coverage" NAME="5.03 Coverage Results" MODIFIED="1684745261124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05" />
+    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$7_03.coverage" NAME="7.03 Coverage Results" MODIFIED="1692538340194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$4_06.coverage" NAME="4.06 Coverage Results" MODIFIED="1684406508329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$8_06.coverage" NAME="8.06 Coverage Results" MODIFIED="1692434092575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter08" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$2_03.coverage" NAME="2.03 Coverage Results" MODIFIED="1683215231509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter02" />
@@ -477,7 +496,7 @@
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$19_07.coverage" NAME="19.07 Coverage Results" MODIFIED="1680150346722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter19" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$5_20.coverage" NAME="5.20 Coverage Results" MODIFIED="1680967156940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$3_14.coverage" NAME="3.14 Coverage Results" MODIFIED="1684404169152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
-    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$7_08.coverage" NAME="7.08 Coverage Results" MODIFIED="1684753225207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter07" />
+    <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$7_08.coverage" NAME="7.08 Coverage Results" MODIFIED="1692538736482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ch07" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$9_03.coverage" NAME="9.03 Coverage Results" MODIFIED="1684830612679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter09" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$12_29.coverage" NAME="12.29 Coverage Results" MODIFIED="1684841610691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12" />
     <SUITE FILE_PATH="coverage/opencv_qing_song_ru_men$5_08.coverage" NAME="5.08 Coverage Results" MODIFIED="1684747613308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05" />

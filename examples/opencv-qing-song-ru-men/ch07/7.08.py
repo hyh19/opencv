@@ -2,7 +2,7 @@
 import cv2 as cv
 
 img = cv.imread('lenaNoise.png')
-res = cv.bilateralFilter(img, 5, 100, 100)
+res = cv.bilateralFilter(img, d=5, sigmaColor=100, sigmaSpace=100)
 cv.imshow('img', img)
 cv.imshow('res', res)
 cv.waitKey()
