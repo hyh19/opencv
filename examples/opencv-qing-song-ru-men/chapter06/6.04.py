@@ -2,7 +2,7 @@
 import cv2 as cv
 
 img = cv.imread('lena.bmp')
-_, res = cv.threshold(img, 127, 255, cv.THRESH_BINARY_INV)
+_, res = cv.threshold(img, thresh=127, maxval=255, type=cv.THRESH_BINARY_INV)
 cv.imshow('img', img)
 cv.imshow('res', res)
 cv.waitKey()

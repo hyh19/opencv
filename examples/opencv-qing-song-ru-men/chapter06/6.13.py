@@ -3,8 +3,8 @@ import cv2 as cv
 
 img = cv.imread('tiffany.bmp')
 img_gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
-_, img_thresh = cv.threshold(img_gray, 127, 255, cv.THRESH_BINARY)
-thresh, img_otsu = cv.threshold(img_gray, 0, 255, cv.THRESH_BINARY + cv.THRESH_OTSU)
+_, img_thresh = cv.threshold(img_gray, thresh=127, maxval=255, type=cv.THRESH_BINARY)
+thresh, img_otsu = cv.threshold(img_gray, thresh=0, maxval=255, type=cv.THRESH_OTSU)
 
 cv.imshow('img', img)
 cv.imshow('gray', img_gray)
