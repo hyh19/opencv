@@ -2,7 +2,7 @@
 import cv2 as cv
 import numpy as np
 
-a = np.random.randint(-256, 256, size=[4, 5], dtype=np.int16)
+a = np.random.randint(low=-256, high=256, size=(4, 5), dtype=np.int16)
 res = cv.convertScaleAbs(a)
 print(f'a = \n{a}')
 print(f'res = \n{res}')
