@@ -3,9 +3,9 @@ import cv2 as cv
 
 img = cv.imread('kernel.bmp')
 
-kernel_rect = cv.getStructuringElement(cv.MORPH_RECT, (59, 59))
-kernel_cross = cv.getStructuringElement(cv.MORPH_CROSS, (59, 59))
-kernel_ellipse = cv.getStructuringElement(cv.MORPH_ELLIPSE, (59, 59))
+kernel_rect = cv.getStructuringElement(shape=cv.MORPH_RECT, ksize=(59, 59))
+kernel_cross = cv.getStructuringElement(shape=cv.MORPH_CROSS, ksize=(59, 59))
+kernel_ellipse = cv.getStructuringElement(shape=cv.MORPH_ELLIPSE, ksize=(59, 59))
 
 img_rect = cv.dilate(img, kernel_rect)
 img_cross = cv.dilate(img, kernel_cross)

@@ -5,7 +5,7 @@ import numpy as np
 img1 = cv.imread('blackhat.bmp')
 img2 = cv.imread('lena.bmp')
 
-kernel = np.ones((5, 5), np.uint8)
+kernel = np.ones(shape=(5, 5), dtype=np.uint8)
 img1_blackhat = cv.morphologyEx(img1, cv.MORPH_BLACKHAT, kernel)
 img2_blackhat = cv.morphologyEx(img2, cv.MORPH_BLACKHAT, kernel)
 

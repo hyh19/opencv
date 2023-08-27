@@ -2,9 +2,9 @@
 import cv2 as cv
 import numpy as np
 
-img = np.zeros((5, 5), np.uint8)
+img = np.zeros(shape=(5, 5), dtype=np.uint8)
 img[1:4, 1:4] = 1
-kernel = np.ones((3, 1), np.uint8)
+kernel = np.ones(shape=(3, 1), dtype=np.uint8)
 img_erode = cv.erode(img, kernel)
 print(f'img = \n{img}')
 print(f'kernel = \n{kernel}')

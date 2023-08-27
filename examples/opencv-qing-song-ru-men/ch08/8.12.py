@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 import cv2 as cv
 
-rect = cv.getStructuringElement(cv.MORPH_RECT, (5, 5))
-cross = cv.getStructuringElement(cv.MORPH_CROSS, (5, 5))
-ellipse = cv.getStructuringElement(cv.MORPH_ELLIPSE, (5, 5))
+rect = cv.getStructuringElement(shape=cv.MORPH_RECT, ksize=(5, 5))
+cross = cv.getStructuringElement(shape=cv.MORPH_CROSS, ksize=(5, 5))
+ellipse = cv.getStructuringElement(shape=cv.MORPH_ELLIPSE, ksize=(5, 5))
 print(f'rect = \n{rect}')
 print(f'cross = \n{cross}')
 print(f'ellipse = \n{ellipse}')

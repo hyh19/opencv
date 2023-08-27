@@ -5,7 +5,7 @@ import numpy as np
 img1 = cv.imread('closing.bmp')
 img2 = cv.imread('closing2.bmp')
 
-kernel = np.ones((10, 10), np.uint8)
+kernel = np.ones(shape=(10, 10), dtype=np.uint8)
 img1_close = cv.morphologyEx(img1, cv.MORPH_CLOSE, kernel, iterations=3)
 img2_close = cv.morphologyEx(img2, cv.MORPH_CLOSE, kernel, iterations=3)
 
